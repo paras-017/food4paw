@@ -1,6 +1,33 @@
+.border{
+  border: 1px solid red;
+}
 .justifyBetween {
     @apply flex justify-between items-center;
   }
   .logo{
     height: 4rem;
   }
+  .navbar-link {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      transition: color 0.12s linear;
+  }
+  .navbar-link:hover {
+      color: #5f6fff;
+  }
+  .navbar-link--cart{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.12s linear;
+  }
+/* absolute  bottom-2 left-4 bg-[#8490ff] rounded-full */
+.cartQuantity{
+  position: absolute;
+  bottom: 17px;
+  left: 16px;
+  background: #5767fc;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 100%;
+  text-align: center;
+}
