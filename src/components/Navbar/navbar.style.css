@@ -1,0 +1,6 @@
+.justifyBetween {
+    @apply flex justify-between items-center;
+  }
+  .logo{
+    height: 4rem;
+  }
