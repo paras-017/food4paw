@@ -77,8 +77,16 @@ const Home = () => {
           </div>
 
           {/* -------------------------P.CATEGORY------------------ */}
-          <div className="pet-category">
-          <h1 className='main-heading'>✨Explore By Pet Category ✨</h1>
+          <div className="pet-category ">
+          <h1 className='main-heading'>Explore By Pet Category ✨</h1>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-3 p-2 ">
+          <img src="./assests/HomePage/petCategories/dog.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/cat.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/fish.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/birds.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/rabbit.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/guineaPig.jpg" alt="" />
+          </div>
           </div>
     </div>
 
