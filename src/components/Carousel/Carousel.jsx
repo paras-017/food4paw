@@ -38,7 +38,7 @@ const slides = [
 
 const MainCarousel = () => {
 return (
-    <div className="w-full md:h-[33rem] lg:h-[35rem] relative overflow-hidden bg-red-300">
+    <div className="w-full md:h-[33rem] lg:h-[36rem] relative overflow-hidden ">
         <Carousel slides={slides} autoplayInterval={2800} />
       </div> 
 )
@@ -63,6 +63,7 @@ const Carousel = ({ slides, autoplayInterval }) => {
 
   useEffect(() => {
     const handleResize = () => {
+      //window.innerWidth give different no  evry time
       if(window.innerWidth <= 1272){
         setIsMobile(true); // Adjust the breakpoint as needed
       }else{
