@@ -72,7 +72,6 @@ const Home = () => {
             <img src="./assests/HomePage/ShopByBrand/Schesir.jpg" alt="" />
             <img src="./assests/HomePage/ShopByBrand/Sheba.jpg" alt="" />
             <img src="./assests/HomePage/ShopByBrand/wahl.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/supplements.jpg" alt="" />
             </div>
           </div>
           
@@ -95,7 +94,7 @@ const Home = () => {
       <div className="doctor">
         <h1 className='main-heading'>✨Consult a doctor✨</h1>
         <div className="bg-[#FAEDD8] flex flex-col-reverse md:flex-row m">
-          <div className="text space-y-2 px-3 md:pl-8  self-center">
+          <div className="text space-y-2 px-3 pb-8 md:pl-8  self-center">
             <h1 className='text-3xl md:text-5xl mt-3'>Online Vet Consultation. <span className='text-cyan-400'>Anytime</span>. Anywhere.</h1>
             <p className='md:text-2xl font-light'>Flat 42% off + Free follow-up</p>
             <button className="bg-cyan-400 py-2 px-3 rounded-md">Book a Consult</button>
