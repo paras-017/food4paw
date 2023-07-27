@@ -32,7 +32,7 @@ const [mobMenu, setMobMenu] = useState(true)
 
 
       {/* Mobile Navbar */}
-     <div className="flex md:hidden mob-nav ">
+     <div className="flex md:hidden mob-nav z-50">
         <NavLink to="/cart" className="navbar-link--cart relative mr-6">
           <FiShoppingCart className=' text-2xl' /><span className="cartQuantity bottom-3 left-3 items-center  "> 7 </span>
         </NavLink>
