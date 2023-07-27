@@ -40,21 +40,31 @@ const Home = () => {
             <img src="./assests/HomePage/popularCategories/supplements.jpg" alt="" />
         </div>
       </div>
+      </div>
+
       {/* -------------------------SPONSORS------------------ */}
       <div className="sponsors">
         <h1 className='main-heading'>✨In The Spotlight✨</h1>
+        <div className="sponsor-img bg-yellow-300 flex flex-col md:flex-row p-3 gap-3">
+          <img src="./assests/HomePage/sponsor/s1.jpg" alt="" className='rounded-2xl'/>
+          <div className="flex flex-col gap-3">
+              <img src="./assests/HomePage/sponsor/s2.jpg" alt="" className='rounded-2xl'/>
+              <img src="./assests/HomePage/sponsor/s3.jpg" alt="" className='rounded-2xl'/>
+          </div>
+        </div>
       </div>
 
-      {/* -------------------------BRAND------------------ */}
-      <div className="brand"></div>
+    <div className="max-w-[85rem]">
+          {/* -------------------------BRAND------------------ */}
+          <div className="brand"></div>
 
-      {/* -------------------------P.CATEGORY------------------ */}
-      <div className="pet-category"></div>
-
+          {/* -------------------------P.CATEGORY------------------ */}
+          <div className="pet-category"></div>
+    </div>
 
       {/* -------------------------P.CATEGORY------------------ */}
       <div className="veterinary"></div>
-     </div>
+ 
     </div>
   )
 }

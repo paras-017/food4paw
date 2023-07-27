@@ -1,4 +1,9 @@
 /* text-center my-5 text-3xl md:text-4xl font-medium */
+
+.justifyBetween {
+    @apply flex justify-between items-center;
+  }
+ 
 .main-heading{
    text-align: center; 
    margin: 20px 0 20px 0;
