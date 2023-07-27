@@ -26,18 +26,18 @@ const Home = () => {
       <div className="popular-categories">
         <h1 className='main-heading '>✨Popular Categories✨</h1>
         <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
-            <img src="./assests/HomePage/popularCategories/dogFood.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/catFood.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/toys.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/dogTreat.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/catTreat.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/litterSupplies.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/walkEssentials.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/grooming.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/bedding.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/bowlFeeders.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/clothing.jpg" alt="" />
-            <img src="./assests/HomePage/popularCategories/supplements.jpg" alt="" />
+            <img  src="./assests/HomePage/popularCategories/dogFood.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/catFood.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/toys.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/dogTreat.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/catTreat.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/litterSupplies.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/walkEssentials.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/grooming.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/bedding.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/bowlFeeders.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/clothing.jpg" alt=""  />
+            <img  src="./assests/HomePage/popularCategories/supplements.jpg" alt=""  />
         </div>
       </div>
       </div>
@@ -75,23 +75,37 @@ const Home = () => {
             <img src="./assests/HomePage/ShopByBrand/supplements.jpg" alt="" />
             </div>
           </div>
-
+          
           {/* -------------------------P.CATEGORY------------------ */}
           <div className="pet-category ">
           <h1 className='main-heading'>Explore By Pet Category ✨</h1>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-3 p-2 ">
-          <img src="./assests/HomePage/petCategories/dog.jpg" alt="" />
-            <img src="./assests/HomePage/petCategories/cat.jpg" alt="" />
-            <img src="./assests/HomePage/petCategories/fish.jpg" alt="" />
-            <img src="./assests/HomePage/petCategories/birds.jpg" alt="" />
-            <img src="./assests/HomePage/petCategories/rabbit.jpg" alt="" />
-            <img src="./assests/HomePage/petCategories/guineaPig.jpg" alt="" />
+            <img src="./assests/HomePage/petCategories/dog.jpg" className=' rounded-2xl' alt="" />
+            <img src="./assests/HomePage/petCategories/cat.jpg" className=' rounded-2xl' alt="" />
+            <img src="./assests/HomePage/petCategories/fish.jpg" className=' rounded-2xl' alt="" />
+            <img src="./assests/HomePage/petCategories/birds.jpg" className=' rounded-2xl' alt="" />
+            <img src="./assests/HomePage/petCategories/rabbit.jpg" className=' rounded-2xl' alt="" />
+            <img src="./assests/HomePage/petCategories/guineaPig.jpg" className=' rounded-2xl' alt="" />
           </div>
           </div>
     </div>
 
-      {/* -------------------------P.CATEGORY------------------ */}
-      <div className="veterinary"></div>
+      {/* -------------------------Consult a doctor------------------ */}
+      
+      <div className="doctor">
+        <h1 className='main-heading'>✨Consult a doctor✨</h1>
+        <div className="bg-[#FAEDD8] flex flex-col-reverse md:flex-row m">
+          <div className="text space-y-2 px-3 md:pl-8  self-center">
+            <h1 className='text-3xl md:text-5xl mt-3'>Online Vet Consultation. <span className='text-cyan-400'>Anytime</span>. Anywhere.</h1>
+            <p className='md:text-2xl font-light'>Flat 42% off + Free follow-up</p>
+            <button className="bg-cyan-400 py-2 px-3 rounded-md">Book a Consult</button>
+          </div>
+          <div className="img">
+            <img src="./assests/Vet/main/vetHome.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      
  
     </div>
   )
