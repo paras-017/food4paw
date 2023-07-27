@@ -4,9 +4,7 @@
 .justifyBetween {
     @apply flex justify-between items-center;
   }
-  .logo{
-    height: 4rem;
-  }
+ 
   .navbar-link {
       font-size: 1.1rem;
       text-transform: uppercase;
@@ -24,10 +22,24 @@
 .cartQuantity{
   position: absolute;
   bottom: 17px;
-  left: 16px;
+  left: 17px;
   background: #5767fc;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border-radius: 100%;
   text-align: center;
+}
+
+/* Mobile Navbar */
+.main-mob-nav{
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  background: rgb(243 244 246 );
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out;
 }
