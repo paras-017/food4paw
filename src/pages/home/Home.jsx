@@ -12,7 +12,7 @@ const Home = () => {
       <div className="carousel">
         <MainCarousel/>
       </div>
-
+{/* ------------------------Offers --- P.CATEGORIES------------------- */}
      <div className=" max-w-[85rem]  m-auto">
 
       {/* -------------------------OFFERS------------------ */}
@@ -45,7 +45,7 @@ const Home = () => {
       {/* -------------------------SPONSORS------------------ */}
       <div className="sponsors">
         <h1 className='main-heading'>✨In The Spotlight✨</h1>
-        <div className="sponsor-img bg-yellow-300 flex flex-col md:flex-row p-3 gap-3">
+        <div className="sponsor-img bg-yellow-300 flex justify-center flex-col md:flex-row p-3 gap-3">
           <img src="./assests/HomePage/sponsor/s1.jpg" alt="" className='rounded-2xl'/>
           <div className="flex flex-col gap-3">
               <img src="./assests/HomePage/sponsor/s2.jpg" alt="" className='rounded-2xl'/>
@@ -54,12 +54,32 @@ const Home = () => {
         </div>
       </div>
 
-    <div className="max-w-[85rem]">
+{/*  ------------------------Brand ---P.category------------------*/}
+    <div className="max-w-[85rem] m-auto">
           {/* -------------------------BRAND------------------ */}
-          <div className="brand"></div>
+          <div className="brand">
+            <h1 className='main-heading'>✨Shop By Brands ✨</h1>
+            <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
+            <img src="./assests/HomePage/ShopByBrand/Basil.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/Furry&Cop.png" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/KennelKitchen.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/kitcat.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/Kongo.png" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/MPets.png" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/Nylabone.png" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/PetStar.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/RoyalCanin.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/Schesir.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/Sheba.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/wahl.jpg" alt="" />
+            <img src="./assests/HomePage/ShopByBrand/supplements.jpg" alt="" />
+            </div>
+          </div>
 
           {/* -------------------------P.CATEGORY------------------ */}
-          <div className="pet-category"></div>
+          <div className="pet-category">
+          <h1 className='main-heading'>✨Explore By Pet Category ✨</h1>
+          </div>
     </div>
 
       {/* -------------------------P.CATEGORY------------------ */}
