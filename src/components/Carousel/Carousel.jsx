@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-// const slides = [
-//   <img src="./assests/HomePage/carousel/1.jpg" className='h-[22rem] md:h-full' alt="Slide 1" />,
-//   <img src="./assests/HomePage/carousel/3.jpg" className='h-[22rem] md:h-full' alt="Slide 2" />,
-//   <img src="./assests/HomePage/carousel/4.png" className='h-[22rem] md:h-full' alt="Slide 3" />,
-//   <img src="./assests/HomePage/carousel/6.jpg" className='h-[22rem] md:h-full' alt="Slide 3" />,
-//   <img src="./assests/HomePage/carousel/7.jpg" className='h-[22rem] md:h-full' alt="Slide 3" />,
-//   <img src="./assests/HomePage/carousel/9.jpg" className='h-[22rem] md:h-full' alt="Slide 3" />,
-// ];
+
 const slides = [
   {
     desktopSrc: './assests/HomePage/carousel/1.jpg',
@@ -45,7 +38,7 @@ const slides = [
 
 const MainCarousel = () => {
 return (
-    <div className="w-full h-[33rem] relative overflow-hidden">
+    <div className="w-full md:h-[33rem] lg:h-[35rem] relative overflow-hidden bg-red-300">
         <Carousel slides={slides} autoplayInterval={2800} />
       </div> 
 )
@@ -67,13 +60,13 @@ const Carousel = ({ slides, autoplayInterval }) => {
       clearInterval(interval);
     };
   }, []);
+
   useEffect(() => {
     const handleResize = () => {
-      if(window.innerWidth <= 768){
-
-        setIsMobile(true);// Adjust the breakpoint as needed
+      if(window.innerWidth <= 1272){
+        setIsMobile(true); // Adjust the breakpoint as needed
       }else{
-        setIsMobile(false);// Adjust the breakpoint as needed
+        setIsMobile(false); // Adjust the breakpoint as needed
 
       }
     };
@@ -84,7 +77,7 @@ const Carousel = ({ slides, autoplayInterval }) => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [window]);
+  }, [window.innerWidth]);
 
   return (
     <div className="relative h-[20rem] ">
