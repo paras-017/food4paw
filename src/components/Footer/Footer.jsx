@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <div className='bg-gray-300'>
         <footer className='max-w-[85rem] m-auto space-y-2 '>
-        <div className='flex md:flex-row flex-col justify-between px-4 space-y-4 md:space-y-0 pt-5 md:pt-20'>
+        <div className='flex md:flex-row flex-col justify-between px-4 space-y-4 md:space-y-0 pt-5 md:pt-10'>
                 <div className="explores flex space-x-3 md:space-x-12">
                         <div className="explore ">
-                            <h1>Explore</h1>
+                            <h1 className='md:font-medium'>Explore</h1>
                             <ul >
                                 <li>My Accounts</li>
                                 <li>Track Your Order</li>
@@ -21,7 +21,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="Popular ">
-                            <h1>Popular Searches</h1>
+                            <h1 className='md:font-medium'>Popular Searches</h1>
                             <ul>
                                 <li>Puppy Corner</li>
                                 <li>Cat Corner</li>
@@ -33,7 +33,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="online ">
-                            <h1>Shop Online</h1>
+                            <h1 className='md:font-medium'>Shop Online</h1>
                             <ul>
                                 <li>Dogs</li>
                                 <li>Cats</li>
@@ -44,7 +44,7 @@ const Footer = () => {
                         </div>
                 </div>
                 <div className="contact  space-y-1">
-                    <h1>Get in touch</h1>
+                    <h1 className='md:font-medium'>Get in touch</h1>
                     <div>
                         <p className='text-sm' >9812312344</p>
                         <p className='text-sm'>support@Food4Paws.com</p>
