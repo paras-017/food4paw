@@ -1,0 +1,15 @@
+.heading{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .heading{
+        font-size: 1.875rem/* 30px */;
+        line-height: 2.25rem/* 36px */;
+    }
+}
