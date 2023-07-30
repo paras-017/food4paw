@@ -1,4 +1,4 @@
-export const doctors = [
+ const doctors = [
             {
             docName: 'Dr. Archit',
             docDesc: 'Dr. Archith K. Sridhar is an experienced veterinarian skilled in treating various species and has expertise in wildlife photography and ecology. He holds a gold medal from Rajiv Gandhi Institute of Veterinary Education and Research, Pondicherry, and a Masters in Practical Entomology from the University of Sheffield, UK.',
@@ -20,3 +20,4 @@ export const doctors = [
             docImg:'./assests/Vet/doctors/DrZaiba.jpg'
         },
 ]
+export default doctors

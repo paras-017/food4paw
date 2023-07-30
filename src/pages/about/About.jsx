@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.style.css'
+import Paws from '../../Common/Paws'
 
 const About = () => {
   return (
@@ -38,10 +39,8 @@ const About = () => {
 </div>
 
 
-{/* ------------Who are We --------------------- */}
-<div className="max-w-[85rem] m-auto mt-8">
-  <img src="./assests/About/paws.png" alt="" />
-</div>
+{/* ------------Pets Paw--------------------- */}
+<Paws/>
 
 
 

@@ -6,7 +6,6 @@ li{
     font-size: 11px;
 } 
 li:hover{
-    text-decoration: underline;
     cursor: pointer;
 }
 
