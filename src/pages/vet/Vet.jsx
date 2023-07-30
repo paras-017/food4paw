@@ -4,7 +4,10 @@ import {  MdVerifiedUser} from 'react-icons/md'
 import {  FaHospitalUser } from 'react-icons/fa'
 import {  GiMedicines } from 'react-icons/gi'
 import Doctor from '../../components/Doctors/Doctor'
+<<<<<<< HEAD
 import Paws from '../../Common/Paws'
+=======
+>>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
 
 
 const Vet = () => {
@@ -66,6 +69,7 @@ const Vet = () => {
 
       {/* ----------------why-------------------- */}
       <div className='max-w-[85rem] m-auto mt-8'>
+<<<<<<< HEAD
         <div className='grid grid-cols-2 md:grid-cols-4 md:gap-2  px-3 max-w-[23rem] md:max-w-6xl m-auto gap-3'>
           <img src="./assests/Vet/areIssues/1.jpg" alt="" className='w-[15rem]'/>
           <img src="./assests/Vet/areIssues/2.jpg" alt="" className='w-[15rem]'/>
@@ -76,15 +80,35 @@ const Vet = () => {
           <p className='px-4 md:text-2xl'>Don’t wait for your pet’s health to turn worse. Get quick advice from our Expert Vet online on what to do next.</p>
           <button className='bg-cyan-400 rounded-xl px-4 py-2  text-white'>Book a consult</button>
         </div>
+=======
+        
+        
+              <div className='grid grid-cols-2 md:grid-cols-4 md:gap-2  px-3 max-w-[23rem] md:max-w-6xl m-auto gap-3'>
+                <img src="./assests/Vet/areIssues/1.jpg" alt="" className='w-[15rem]'/>
+                <img src="./assests/Vet/areIssues/2.jpg" alt="" className='w-[15rem]'/>
+                <img src="./assests/Vet/areIssues/3.jpg" alt="" className='w-[15rem]'/>
+                <img src="./assests/Vet/areIssues/4.jpg" alt="" className='w-[15rem]'/>
+              </div>
+           
+          
+          <div className='text-center my-4 space-y-3 '>
+            <p className='px-4 md:text-2xl'>Don’t wait for your pet’s health to turn worse. Get quick advice from our Expert Vet online on what to do next.</p>
+            <button className='bg-cyan-400 rounded-xl px-4 py-2  text-white'>Book a consult</button>
+          </div>
+        
+>>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
       </div>
 
       {/* -------------------doctors----------------- */}
       <div>
         <Doctor/>
       </div>
+<<<<<<< HEAD
 
       {/* ----------------Paws---------------- */}
       <Paws/>
+=======
+>>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
     </>
   )
 }

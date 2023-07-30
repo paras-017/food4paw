@@ -59,6 +59,7 @@ const Home = () => {
           {/* -------------------------BRAND------------------ */}
           <div className="brand">
             <h1 className='main-heading'>✨Shop By Brands ✨</h1>
+<<<<<<< HEAD
             <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
             <img src="./assests/HomePage/ShopByBrand/Basil.jpg" alt="" />
             <img src="./assests/HomePage/ShopByBrand/Furry&Cop.png" alt="" />
@@ -72,6 +73,21 @@ const Home = () => {
             <img src="./assests/HomePage/ShopByBrand/Schesir.jpg" alt="" />
             <img src="./assests/HomePage/ShopByBrand/Sheba.jpg" alt="" />
             <img src="./assests/HomePage/ShopByBrand/wahl.jpg" alt="" />
+=======
+              <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
+              <img src="./assests/HomePage/ShopByBrand/Basil.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/Furry&Cop.png" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/KennelKitchen.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/kitcat.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/Kongo.png" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/MPets.png" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/Nylabone.png" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/PetStar.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/RoyalCanin.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/Schesir.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/Sheba.jpg" alt="" />
+              <img src="./assests/HomePage/ShopByBrand/wahl.jpg" alt="" />
+>>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
             </div>
           </div>
           
