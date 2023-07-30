@@ -65,19 +65,16 @@ const Vet = () => {
 
       {/* ----------------why-------------------- */}
       <div className='max-w-[85rem] m-auto mt-8'>
-        
-          <div className="max-w-[78rem]  grid grid-cols-2 md:grid-cols-4 gap-3 px-3 m-auto">
-              <img src="./assests/Vet/areIssues/1.jpg" alt="" className='w-[16rem] '/>
-              <img src="./assests/Vet/areIssues/2.jpg" alt="" className='w-[16rem]'/>
-              <img src="./assests/Vet/areIssues/3.jpg" alt="" className='w-[16rem]'/>
-              <img src="./assests/Vet/areIssues/4.jpg" alt="" className='w-[16rem]'/>
-           </div>
-          
-          <div className='text-center my-4 space-y-3'>
-            <p>Don’t wait for your pet’s health to turn worse. Get quick advice from our Expert Vet online on what to do next.</p>
-            <button className='bg-cyan-400 rounded-xl px-4 py-2  text-white'>Book a consult</button>
-          </div>
-        
+        <div className='grid grid-cols-2 md:grid-cols-4 md:gap-2  px-3 max-w-[23rem] md:max-w-6xl m-auto gap-3'>
+          <img src="./assests/Vet/areIssues/1.jpg" alt="" className='w-[15rem]'/>
+          <img src="./assests/Vet/areIssues/2.jpg" alt="" className='w-[15rem]'/>
+          <img src="./assests/Vet/areIssues/3.jpg" alt="" className='w-[15rem]'/>
+          <img src="./assests/Vet/areIssues/4.jpg" alt="" className='w-[15rem]'/>
+        </div>                     
+        <div className='text-center my-4 space-y-3 '>
+          <p className='px-4 md:text-2xl'>Don’t wait for your pet’s health to turn worse. Get quick advice from our Expert Vet online on what to do next.</p>
+          <button className='bg-cyan-400 rounded-xl px-4 py-2  text-white'>Book a consult</button>
+        </div>
       </div>
 
       {/* -------------------doctors----------------- */}
