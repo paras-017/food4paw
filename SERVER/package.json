@@ -1,11 +1,18 @@
 {
-  "name": "server",
+  "name": "food4paw_api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API for food4paw",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
