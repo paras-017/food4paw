@@ -1,8 +1,4 @@
-<<<<<<< HEAD
  const doctors = [
-=======
-export const doctors = [
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
             {
             docName: 'Dr. Archit',
             docDesc: 'Dr. Archith K. Sridhar is an experienced veterinarian skilled in treating various species and has expertise in wildlife photography and ecology. He holds a gold medal from Rajiv Gandhi Institute of Veterinary Education and Research, Pondicherry, and a Masters in Practical Entomology from the University of Sheffield, UK.',
@@ -23,9 +19,5 @@ export const doctors = [
             docDesc: "Dr. Zaiba is a graduate of Hassan Veterinary College, Karnataka, with over one year of experience as a Veterinary Physician where she has developed a strong foundation in providing comprehensive medical care for animals. Her genuine love for animals since childhood has been her driving force in pursuing a career as a veterinarian, as she believes it's her way of giving back to them.",
             docImg:'./assests/Vet/doctors/DrZaiba.jpg'
         },
-<<<<<<< HEAD
 ]
 export default doctors
-=======
-]
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)

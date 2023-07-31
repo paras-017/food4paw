@@ -1,9 +1,6 @@
 import React from 'react'
 import './about.style.css'
-<<<<<<< HEAD
 import Paws from '../../Common/Paws'
-=======
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
 
 const About = () => {
   return (
@@ -42,15 +39,8 @@ const About = () => {
 </div>
 
 
-<<<<<<< HEAD
 {/* ------------Pets Paw--------------------- */}
 <Paws/>
-=======
-{/* ------------Who are We --------------------- */}
-<div className="max-w-[85rem] m-auto mt-8">
-  <img src="./assests/About/paws.png" alt="" />
-</div>
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
 
 
 

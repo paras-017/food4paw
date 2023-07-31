@@ -1,5 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
+
 import doctors from './doctorsAPI.js'
 import DoctorCard from './DoctorCard.jsx';
 const Doctor = () => {
@@ -12,15 +12,8 @@ const Doctor = () => {
       ))}
     </div>
   </div>
-=======
-import {doctors} from './doctorsAPI.js'
-console.log(doctors);
-
-const Doctor = () => {
-  return (
-    <div>Doctor</div>
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
   )
+
 }
 
 export default Doctor

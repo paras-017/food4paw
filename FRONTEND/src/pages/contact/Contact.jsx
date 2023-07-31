@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import { FiMapPin, FiPhone } from 'react-icons/fi';
 import Paws from '../../Common/Paws';
 
-const ContactPage = () => {
+const Contact = () => {
   return (
     <>
     <div className="   py-8">
@@ -49,15 +49,6 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
-=======
-import React from 'react'
 
-const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
 
 export default Contact
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)

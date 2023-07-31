@@ -6,14 +6,9 @@ import { CgMenu, CgClose } from "react-icons/cg";
 
 
 
-<<<<<<< HEAD
 const Navbar = () => {
 const [mobMenu, setMobMenu] = useState(true)
 
-=======
-const Navbar = () => {     
-const [mobMenu, setMobMenu] = useState(true)
->>>>>>> 92c521a (VET:pets problem in cloud UI fixed)
   return (
    <div className='bg-gray-100  max-w-full '>
     <div className='justifyBetween  bg-gray-100 relative px-2 md:px-8 py-3 max-w-[95rem] m-auto'>
