@@ -1,0 +1,55 @@
+[
+    {
+     "name":"For Dogs",
+     "imgUrl":"./assests/HomePage/TopCategory/ForDogs.jpeg",
+     "discount":"Upto 70% Off"
+    },
+    {
+     "name":"For Cats",
+     "imgUrl":"./assests/HomePage/TopCategory/ForCats.png",
+     "discount":"Upto 60% Off"
+    },
+    {
+     "name":"Dog Food",
+     "imgUrl":"./assests/HomePage/TopCategory/DogFood.jpeg",
+     "discount":"Upto 70% Off"
+    },
+    {
+     "name":"Cat Food",
+     "imgUrl":"./assests/HomePage/TopCategory/CatFood.jpeg",
+     "discount":"Upto 50% Off"
+    },
+    {
+     "name":"Puppy Food",
+     "imgUrl":"./assests/HomePage/TopCategory/PuppyFood.png",
+     "discount":"Upto 78% Off"
+    },
+    {
+     "name":"Kitten Food",
+     "imgUrl":"./assests/HomePage/TopCategory/KittenFood.png",
+     "discount":"Upto 40% Off"
+    },
+    {
+     "name":"Dog Treates",
+     "imgUrl":"./assests/HomePage/TopCategory/DogTreat.jpeg",
+     "discount":"Upto 5% Off"
+    },
+    {
+     "name":"Cat Treates",
+     "imgUrl":"./assests/HomePage/TopCategory/CatTreat.jpeg",
+     "discount":"Upto 67% Off"
+    },
+    {
+     "name":"Cat Litter",
+     "imgUrl":"./assests/HomePage/TopCategory/CatLitter.jpeg",
+     "discount":"Upto 50% Off"
+    },
+    {
+     "name":"Pet Wellness",
+     "imgUrl":"./assests/HomePage/TopCategory/PetWellness.jpeg",
+     "discount":"Upto 80% Off"
+    }
+    
+   ]
+   
+   

@@ -2,7 +2,8 @@ import React from 'react'
 import Carousel from '../../components/Carousel/Carousel'
 import MainCarousel from '../../components/Carousel/Carousel'
 import './home.style.css'
-import ShopbyBrand from '../../components/ShopbyBrand/ShopbyBrand'
+import ShopbyBrand from '../../components/HomeComponent/ShopbyBrand/ShopbyBrand'
+import TopCategory from '../../components/HomeComponent/TopCategory/TopCategory'
 
 const Home = () => {
 
@@ -25,21 +26,8 @@ const Home = () => {
 
       {/* -------------------------P.CATEGORIES------------------ */}
       <div className="popular-categories">
-        <h1 className='main-heading '>✨Popular Categories✨</h1>
-        <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
-            <img  src="./assests/HomePage/popularCategories/dogFood.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/catFood.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/toys.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/dogTreat.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/catTreat.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/litterSupplies.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/walkEssentials.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/grooming.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/bedding.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/bowlFeeders.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/clothing.jpg" alt=""  />
-            <img  src="./assests/HomePage/popularCategories/supplements.jpg" alt=""  />
-        </div>
+        <h1 className='main-heading '>✨Top Category Deals✨</h1>
+        <TopCategory/>
       </div>
       </div>
 
