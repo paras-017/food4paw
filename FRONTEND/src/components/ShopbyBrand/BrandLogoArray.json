@@ -1,0 +1,78 @@
+[
+ {
+  "name":"Pedigree",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Pedigree.png",
+  "discount":"Upto 70% discount"
+ },
+ {
+  "name":"Whiskas",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Whiskas.png",
+  "discount":"Upto 24% discount"
+ },
+ {
+  "name":"Sheba",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Sheba.png",
+  "discount":"Upto 34% discount"
+ },
+ {
+  "name":"RoyalCanin",
+  "imgUrl":"./assests/HomePage/ShopByBrand/RoyalCanin.png",
+  "discount":"Upto 50% discount"
+ },
+ {
+  "name":"JerHigh",
+  "imgUrl":"./assests/HomePage/ShopByBrand/JerHigh.png",
+  "discount":"Upto 78% discount"
+ },
+ {
+  "name":"ChipChop",
+  "imgUrl":"./assests/HomePage/ShopByBrand/ChipChop.png",
+  "discount":"Upto 40% discount"
+ },
+ {
+  "name":"Iams",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Iams.png",
+  "discount":"Upto 5% discount"
+ },
+ {
+  "name":"Chappi",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Chappi.png",
+  "discount":"Upto 67% discount"
+ },
+ {
+  "name":"Himalayan",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Himalayan.png",
+  "discount":"Upto 50% discount"
+ },
+ {
+  "name":"Drools",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Drools.png",
+  "discount":"Upto 80% discount"
+ },
+ {
+  "name":"Acana",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Acana.png",
+  "discount":"Upto 25% discount"
+ },
+ {
+  "name":"Captzack",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Captzack.png",
+  "discount":"Upto 80% discount"
+ },
+ {
+  "name":"Meo",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Meo.png",
+  "discount":"Upto 40% discount"
+ },
+ {
+  "name":"Purepet",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Purepet.png",
+  "discount":"Upto 60% discount"
+ },
+ {
+  "name":"Temptation",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Temptation.png",
+  "discount":"Upto 15% discount"
+ }
+]
+

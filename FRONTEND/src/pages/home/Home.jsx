@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from '../../components/Carousel/Carousel'
 import MainCarousel from '../../components/Carousel/Carousel'
 import './home.style.css'
+import ShopbyBrand from '../../components/ShopbyBrand/ShopbyBrand'
 
 const Home = () => {
 
@@ -59,20 +60,7 @@ const Home = () => {
           {/* -------------------------BRAND------------------ */}
           <div className="brand">
             <h1 className='main-heading'>✨Shop By Brands ✨</h1>
-            <div className="grid grid-cols-3 gap-4 md:grid-cols-6 px-2 items-center">
-            <img src="./assests/HomePage/ShopByBrand/Basil.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/Furry&Cop.png" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/KennelKitchen.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/kitcat.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/Kongo.png" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/MPets.png" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/Nylabone.png" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/PetStar.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/RoyalCanin.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/Schesir.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/Sheba.jpg" alt="" />
-            <img src="./assests/HomePage/ShopByBrand/wahl.jpg" alt="" />
-            </div>
+            <ShopbyBrand/>
           </div>
           
           {/* -------------------------P.CATEGORY------------------ */}
