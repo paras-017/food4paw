@@ -10,23 +10,23 @@
      "discount":"Upto 60% Off"
     },
     {
-     "name":"Dog Food",
-     "imgUrl":"./assests/HomePage/TopCategory/DogFood.jpeg",
+     "name":"Dog Toys",
+     "imgUrl":"./assests/HomePage/TopCategory/dogToy.png",
      "discount":"Upto 70% Off"
     },
     {
-     "name":"Cat Food",
-     "imgUrl":"./assests/HomePage/TopCategory/CatFood.jpeg",
+     "name":"Cat Toys",
+     "imgUrl":"./assests/HomePage/TopCategory/catToy.png",
      "discount":"Upto 50% Off"
     },
     {
-     "name":"Puppy Food",
-     "imgUrl":"./assests/HomePage/TopCategory/PuppyFood.png",
+     "name":"Bowls",
+     "imgUrl":"./assests/HomePage/TopCategory/bowl.png",
      "discount":"Upto 78% Off"
     },
     {
-     "name":"Kitten Food",
-     "imgUrl":"./assests/HomePage/TopCategory/KittenFood.png",
+     "name":"Walk Essentials",
+     "imgUrl":"./assests/HomePage/TopCategory/petWalkEssential.png",
      "discount":"Upto 40% Off"
     },
     {

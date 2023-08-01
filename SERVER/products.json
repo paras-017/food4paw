@@ -1,45 +1,96 @@
 [
-    {
-      "name": "iphone",
-      "price": 154,
-      "featured": true,
-      "company": "apple"
-    },
-    {
-      "name": "iphone10",
-      "price": 1154,
-      "featured": true,
-      "company": "apple"
-    },
-    {
-      "name": "watch",
-      "price": 204,
-      "company": "apple"
-    },
-    {
-      "name": "watch10",
-      "price": 304,
-      "company": "apple"
-    },
-    {
-      "name": "s20",
-      "price": 404,
-      "company": "samsung"
-    },
-    {
-      "name": "s20",
-      "price": 505,
-      "company": "samsung"
-    },
-    {
-      "name": "dell gaming",
-      "price": 501,
-      "company": "dell"
-    },
-    {
-      "name": "mi20",
-      "price": 701,
-      "company": "mi"
-    }
-  ]
   
+  {
+    "name": "Pedigree Adult Dry Dog Food, Meat & Rice",
+    "brand": "Pedigree",
+    "price":[
+            {
+              "1kg":  {
+                  "originalPrice": 299,
+                  "dealPrice": 263,
+                  "discontPercent": 12,
+                  "ImgbySize":"https://tinyurl.com/247ddtwm"
+                }
+            },
+            {
+              "2.8kg":  {
+                  "originalPrice": 725,
+                  "dealPrice": 689,
+                  "discontPercent": 4,
+                  "ImgbySize":"https://tinyurl.com/2fy5se3z"
+                }
+            },
+            {
+              "10kg":  {
+                  "originalPrice": 2220,
+                  "dealPrice": 2109,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/ykym5uny"
+                }
+            },
+            {
+              "20kg":  {
+                  "originalPrice": 3620,
+                  "dealPrice": 3439,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/446tnyzv"
+                }
+            }
+            
+    ],
+    "description1": "This complete and balanced meal from PEDIGREE is the ideal treat for your furry companion. It contains wholesome cereals, meat and chicken which provides essential nutrients for your pet's healthy growth. Feed your pet 2 bowls a day, as per the instructions, for 6 weeks and you will soon notice the 5 Signs of Good Health - a Healthier and Shinier Coat, Strong Bones and Teeth, Digestive Health, Strong Muscles, and Improved Natural Defence.",
+    "description2": "This food is the result of extensive research done by experts from the renowned Waltham Centre for Pet Nutrition and meets the standards set by the U.S. National Academy of Science. Give your pet this nutritious and tasty meal to keep him healthy and active.",
+    "Ingredients": "Meat and Meat By-products, Chicken and Chicken By-products, Vegetables &Vegetable By-products, Vegetable Oils, Milk Powder, Iodised Salt, Essential Vitamins and Minerals, Cereals &Cereal By-products, Permitted Preservatives, Antioxidants &Flavours, No Beef Or Pork.",
+    "TopCategory": "For Dog",
+    "petCategory": "dog",
+    "stock": 67,
+    "stars": 4,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/2p8byu37" },
+      { "id": 2, "url": "https://tinyurl.com/2s3mems9" },
+      { "id": 3, "url": "https://tinyurl.com/535d5ct5" },
+      { "id": 4, "url": "https://tinyurl.com/bdf9wdum" }
+     ]
+  },
+    
+  {
+    "name": "Drools Optimum Performance Adult Dog Food",
+    "brand": "Drools",
+    "price":[
+            {
+              "10kg":  {
+                  "originalPrice": 1499,
+                  "dealPrice": 1424,
+                  "discontPercent": 5,
+                  "ImgbySize":"https://tinyurl.com/bd4mpbuj"
+                }
+            },
+           
+            {
+              "20kg":  {
+                  "originalPrice": 2950,
+                  "dealPrice": 2803,
+                  "discontPercent": 4,
+                  "ImgbySize":"https://tinyurl.com/bd4mpbuj"
+                }
+            }
+            
+            
+    ],
+    "description1": "Drools Optimum Performance Dog Food is an ideal choice for your pup. For starters, this reliable brand uses fresh chicken as the primary ingredient, providing your pet with important proteins to support their active lifestyle. Additionally, the formula is free of fillers – 100% nutritious ingredients for a healthy and strong pup.",
+    "description2": "The food is enriched with organic minerals for a complete nutritional profile. With Drools Optimum Performance Dog Food, you can be sure your furry friend is getting all the nutrition they need.",
+    "Ingredients": "Chicken, Fish Oil, Soya Refined Oil, Lecithin, Corn, Rice, Wheat, Corn Gluten Meal, Essential Amino Acids, Minerals, Salt and Antioxidants. Nutritional Analysis shows Protein of 20% min, Fat of 10% min, Crude Fibre 2.5% max and Moisture 10% max.",
+    "TopCategory": "For Dogs",
+    "petCategory": "Dog",
+    "stock": 34,
+    "stars": 4.8,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/bd4mpbuj" },
+      { "id": 2, "url": "https://tinyurl.com/ms24x6vh" },
+      { "id": 3, "url": "https://tinyurl.com/ycd5r435" },
+      { "id": 4, "url": "https://tinyurl.com/2waw2mh6" }
+     ]
+  }
+  
+  
+]
