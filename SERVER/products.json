@@ -1,6 +1,7 @@
 [
   
   {
+    "dealPrice":263,
     "name": "Pedigree Adult Dry Dog Food, Meat & Rice",
     "brand": "Pedigree",
     "price":[
@@ -40,9 +41,9 @@
     ],
     "description1": "This complete and balanced meal from PEDIGREE is the ideal treat for your furry companion. It contains wholesome cereals, meat and chicken which provides essential nutrients for your pet's healthy growth. Feed your pet 2 bowls a day, as per the instructions, for 6 weeks and you will soon notice the 5 Signs of Good Health - a Healthier and Shinier Coat, Strong Bones and Teeth, Digestive Health, Strong Muscles, and Improved Natural Defence.",
     "description2": "This food is the result of extensive research done by experts from the renowned Waltham Centre for Pet Nutrition and meets the standards set by the U.S. National Academy of Science. Give your pet this nutritious and tasty meal to keep him healthy and active.",
-    "Ingredients": "Meat and Meat By-products, Chicken and Chicken By-products, Vegetables &Vegetable By-products, Vegetable Oils, Milk Powder, Iodised Salt, Essential Vitamins and Minerals, Cereals &Cereal By-products, Permitted Preservatives, Antioxidants &Flavours, No Beef Or Pork.",
-    "TopCategory": "For Dog",
-    "petCategory": "dog",
+    "ingredients": "Meat and Meat By-products, Chicken and Chicken By-products, Vegetables &Vegetable By-products, Vegetable Oils, Milk Powder, Iodised Salt, Essential Vitamins and Minerals, Cereals &Cereal By-products, Permitted Preservatives, Antioxidants &Flavours, No Beef Or Pork.",
+    "topCategory": "forDogs",
+    "petCategory": ["dog"],
     "stock": 67,
     "stars": 4,
     "images": [
@@ -54,6 +55,7 @@
   },
     
   {
+    "dealPrice":1424,
     "name": "Drools Optimum Performance Adult Dog Food",
     "brand": "Drools",
     "price":[
@@ -77,11 +79,11 @@
             
             
     ],
-    "description1": "Drools Optimum Performance Dog Food is an ideal choice for your pup. For starters, this reliable brand uses fresh chicken as the primary ingredient, providing your pet with important proteins to support their active lifestyle. Additionally, the formula is free of fillers – 100% nutritious ingredients for a healthy and strong pup.",
+    "description1": "Drools Optimum Performance Dog Food is an ideal choice for your pup. For starters, this reliable brand uses fresh chicken as the primary ingredient, providing your pet with important proteins to support their active lifestyle. Additionally, the formula is free of fillers – 100% nutritious ingredient for a healthy and strong pup.",
     "description2": "The food is enriched with organic minerals for a complete nutritional profile. With Drools Optimum Performance Dog Food, you can be sure your furry friend is getting all the nutrition they need.",
-    "Ingredients": "Chicken, Fish Oil, Soya Refined Oil, Lecithin, Corn, Rice, Wheat, Corn Gluten Meal, Essential Amino Acids, Minerals, Salt and Antioxidants. Nutritional Analysis shows Protein of 20% min, Fat of 10% min, Crude Fibre 2.5% max and Moisture 10% max.",
-    "TopCategory": "For Dogs",
-    "petCategory": "Dog",
+    "ingredients": "Chicken, Fish Oil, Soya Refined Oil, Lecithin, Corn, Rice, Wheat, Corn Gluten Meal, Essential Amino Acids, Minerals, Salt and Antioxidants. Nutritional Analysis shows Protein of 20% min, Fat of 10% min, Crude Fibre 2.5% max and Moisture 10% max.",
+    "topCategory": "forDogs",
+    "petCategory": ["dog"],
     "stock": 34,
     "stars": 4.8,
     "images": [
@@ -90,7 +92,522 @@
       { "id": 3, "url": "https://tinyurl.com/ycd5r435" },
       { "id": 4, "url": "https://tinyurl.com/2waw2mh6" }
      ]
-  }
+  },
+    
+  {
+    "dealPrice":189,
+    "name": "Whiskas Kitten (2-12 months) Dry Cat Food, Mackerel Flavour",
+    "brand": "Whiskas",
+    "price":[
+            {
+              "450g":  {
+                  "originalPrice": 215,
+                  "dealPrice": 189,
+                  "discontPercent": 12,
+                  "ImgbySize":"https://tinyurl.com/267439rv"
+                }
+            },
+           
+            {
+              "20kg":  {
+                  "originalPrice": 410,
+                  "dealPrice": 390,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/3ak78xvf"
+                }
+            }
+            
+            
+    ],
+    "description1": "The mackerel flavour of Whiskas kitten food provides an appetising and delicious taste your kitten will love and it has been specially formulated to meet their nutritional needs. It is a complete and balanced meal which contains all the nutrients to help support healthy growth and development.",
+    "description2": "Whiskas dry cat food helps support the cat's vital system by providing it a healthy and shiny coat, healthy eyesight, and energy to be lively and active. In addition, with a texture that appeals to the palate of your feline, Whiskas ensures meal time is filling and fun!",
+    "ingredients":"Cereal, Poulty & Poultry & Poultry By-Products, Oils (Palm, Soy), Soy Bean Meal,Flavours, Wheat Flour, Minerals, Corn Gluten Meal , Milk Powder, Vitamins, Iodised Salt, Methionine,  Taurine, Preservatives",
+    "topCategory": "forCats",
+    "petCategory": ["cat"],
+    "stock": 4,
+    "stars": 4,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/267439rv" },
+      { "id": 2, "url": "https://tinyurl.com/5924v3re" },
+      { "id": 3, "url": "https://tinyurl.com/bdhjbv32" },
+      { "id": 4, "url": "https://tinyurl.com/yckfdsem" }
+     ]
+  },  
+    
+  {
+    "dealPrice":960,
+    "name": "Me-O Adult Dry Cat Food Tuna Flavour",
+    "brand": "MeO",
+    "price":[
+            {
+              "3kg":  {
+                  "originalPrice": 1010,
+                  "dealPrice": 960,
+                  "discontPercent": 4,
+                  "ImgbySize":"https://tinyurl.com/3w7wekvb"
+                }
+            },
+            {
+              "7kg":  {
+                  "originalPrice": 2180,
+                  "dealPrice": 2071,
+                  "discontPercent": 5,
+                  "ImgbySize":"https://tinyurl.com/4rnw3mnr"
+                }
+            }
+    ],
+    "description1": "Me-O Cat Food is an optimally balanced and nutritionally complete cat food with high palatability and digestibility.",
+    "description2": "The delicious, nutritious and crunchy nature of Me-O Cat Food makes your beloved feline fall for it right from the very first bite. Just be sure you always have a bowl of clean drinking water nearby for your loving pet.",
+    "ingredients":"Dry Meat, dry fish, Cereal, Poulty & Poultry & Poultry By-Products, Oils (Palm, Soy), Soy Bean Meal,Flavours, Wheat Flour, Minerals, Corn Gluten Meal , Milk Powder, Vitamins, Iodised Salt, Methionine,  Taurine, Preservatives",
+    "topCategory": "forCats",
+    "petCategory": ["cat"],
+    "stock": 54,
+    "stars": 5,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/3w7wekvb" },
+      { "id": 2, "url": "https://tinyurl.com/mta7emk3" },
+      { "id": 3, "url": "https://tinyurl.com/3udmtsck" },
+      { "id": 4, "url": "https://tinyurl.com/yxv3wphk" }
+     ]
+  }, 
   
+  {
+    "dealPrice":326,
+    "name": "Sheba Mr Mouse Plush Toys for Dogs (Mix)",
+    "brand": "Sheba",
+    "price":[
+            {
+              "Medium":  {
+                  "originalPrice": 355,
+                  "dealPrice": 326,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/3n3z7mba"
+                }
+            },
+            {
+              "Large":  {
+                  "originalPrice": 480,
+                  "dealPrice": 440,
+                  "discontPercent": 7,
+                  "ImgbySize":"https://tinyurl.com/53kw6dyu"
+                }
+            }
+    ],
+    "description1": "Introducing the Sheba x Fofos Plush Mr Mouse Toy for Dogs – a delightful and interactive toy for small breeds. This cuddly mouse is made from super soft polyester fabric, making it the perfect companion for cuddling and playing. Inside the toy is a squeaker that is loud enough to elicit a reaction, but not too loud to be intrusive",
+    "description2": "Designed to mimic prey, the Mr Mouse Toy is the perfect way to stimulate your dog's natural hunting instincts while having a great time. Ideal for extra-small to small dogs up to 10kgs, this toy is perfect for tuggling, snuggling, fetching and mild chewing",
+    
+    "topCategory": "dogToys",
+    "petCategory": ["dog"],
+    "stock": 26,
+    "stars": 4.6,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/3n3z7mba" },
+      { "id": 2, "url": "https://tinyurl.com/2r6ek8zj" },
+      { "id": 3, "url": "https://tinyurl.com/35rapu45" },
+      { "id": 4, "url": "https://tinyurl.com/bddb8x24" }
+     ]
+  },
+  
+  {
+    "dealPrice":182,
+    "name": "Jer-High Fuzzy Bird Cat Toy",
+    "brand": "JerHigh",
+    "price":[
+            {
+              "Medium":  {
+                  "originalPrice": 270,
+                  "dealPrice": 182,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/7zn5v56e"
+                }
+            },
+            {
+              "Large":  {
+                  "originalPrice": 400,
+                  "dealPrice": 310,
+                  "discontPercent": 7,
+                  "ImgbySize":"https://tinyurl.com/yckt49zu"
+                }
+            }
+    ],
+    "description1": "Jer-High Fuzzy Bird is the perfect cat toy to exercise and stimulate your beloved pet. The toy is covered with a super soft polyester fabric and is available in 3 vibrant colours. It comes with a bell inside and is filled with imported US grade dried catnip leaves and grass powder",
+    "description2": "Catnip is a plant related to mint and contains an essential oil called nepetalactone which is known to cause calming, relaxing and euphoric effects on cats. Catnip in small doses is non-addictive and safe for kittens",
+    
+    "topCategory": "catToys",
+    "petCategory": ["cat"],
+    "stock": 12,
+    "stars": 4.3,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/7zn5v56e" },
+      { "id": 2, "url": "https://tinyurl.com/mr2swnfj" },
+      { "id": 3, "url": "https://tinyurl.com/48z237ph" },
+      { "id": 4, "url": "https://tinyurl.com/yckt49zu" }
+     ]
+  },
+  
+  {
+    "dealPrice":643,
+    "name": "Chip Chop Pet Bowl for Dogs (Small / Medium / Large)",
+    "brand": "ChipChop",
+    "price":[
+            {
+              "small":  {
+                  "originalPrice": 699,
+                  "dealPrice": 643,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/2p9c7dxv"
+                }
+            },
+            {
+              "Medium":  {
+                  "originalPrice": 799,
+                  "dealPrice": 735,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/4kannsf5"
+                }
+            },
+            {
+              "Large":  {
+                  "originalPrice": 899,
+                  "dealPrice": 827,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/v7wp2ef6"
+                }
+            }
+    ],
+    "description1": "A sustainably made bamboo food and water bowl that will last for years in the home, before naturally       breaking down once disposed of. Natural food dyes are used to create bright colours",
+    "description2": "simple design, this bamboo fibre bowl sits comfortably in any home. The gentle waves are a reminder of the good you are doing by avoiding single-use plastic. Let’s keep our oceans clean",
+    
+    "topCategory": "bowls",
+    "petCategory": ["cat"],
+    "stock": 24,
+    "stars": 3.9,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/2p9c7dxv" },
+      { "id": 2, "url": "https://tinyurl.com/4kannsf5" },
+      { "id": 3, "url": "https://tinyurl.com/v7wp2ef6" },
+      { "id": 4, "url": "https://tinyurl.com/45j9ppyw" }
+     ]
+  },
+    
+  {
+    "dealPrice":575,
+    "name": "Chappi Leash, Troy - with Padded Handle Heavy Duty Hardware",
+    "brand": "Chappi",
+    "price":[
+            {
+              "small":  {
+                  "originalPrice": 625,
+                  "dealPrice": 575,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/3kv6k3a4"
+                }
+            }            
+    ],
+    "description1": "Chappi Leash, Troy - with Padded Handle Heavy Duty Hardware-5 Ft Long 1 Inch Wide-Sprint",
+    "description2": "The Leash has a padded handle for extra grip and comfort. Soft & Comfortable Handle provides adequate cushioning at necessary pressure points for your palms.",
+    
+    "topCategory": "walkEssentials",
+    "petCategory": ["dog","cat"],
+    "stock": 24,
+    "stars": 3.9,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/2p9c7dxv" },
+      { "id": 2, "url": "https://tinyurl.com/4kannsf5" },
+      { "id": 3, "url": "https://tinyurl.com/v7wp2ef6" },
+      { "id": 4, "url": "https://tinyurl.com/45j9ppyw" }
+     ]
+  },
+   
+  
+   
+  {
+    "dealPrice":1288,
+    "name": "Doggos Baby Monster Pack (pack of 5)",
+    "brand": "Doggos",
+    "price":[
+            {
+              "5 pack":  {
+                  "originalPrice": 1400,
+                  "dealPrice": 1288,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/bddeumnx"
+                }
+            }            
+    ],
+    "description1": "Baby Monster Pack contains 2kg pack of fresh food i.e. 10 meals of 200gm each. Its filled with freshest of ingredient that's not only good for your dog's health, but also for a balanced nutrition. This is an ideal every day Fresh dog food, packed with all vitamins and minerals for overall health of the dog. Good for all dogs above 3 months.",
+    "description2": "Stays Fresh for 12 months at Room Temperature. No Refrigeration required.",
+    "ingredients": "Fresh Chicken Liver,Fresh Pumpkin (with Pumpkin Seeds),Fresh Carrots,Fresh Potatoes,Fresh Ginger,Fresh Coriander Leaves,Turmeric Powder,Sunflower Oil,Brown Rice,White Rice",
+    "topCategory": "dogTreat",
+    "petCategory": ["dog"],
+    "stock": 21,
+    "stars": 4.5,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/bddeumnx" },
+      { "id": 2, "url": "https://tinyurl.com/4c3xebrk" },
+      { "id": 3, "url": "https://tinyurl.com/5cyhex44" },
+      { "id": 4, "url": "https://tinyurl.com/2srs4s5r" }
+     ]
+  },
+   
+  {
+    "dealPrice":1282,
+    "name": "IAMS Proactive Health, Mother & Kitten (2-12 Months) Dry Premium Cat Food with Chicken, 3kg",
+    "brand": "IAMS",
+    "price":[
+            {
+              "3kg":  {
+                  "originalPrice": 1710,
+                  "dealPrice": 1282,
+                  "discontPercent":25,
+                  "ImgbySize":"https://tinyurl.com/6t35kru5"
+                }
+            }            
+    ],
+    "description1": "Nourishes development for a heart-warming year of feline firsts and mothers, Scientifically proven to help increase the level of Vitamin E in your cat",
+    "description2": "With signature blend of wholesome fiber & FOS natural prebiotic SUPPORTS EYE & Formulated with colostrum & contains DHA found in mother's milk, Formulated with quality protein & minerals to help kitten build muscles and bones",
+    "ingredients": "Meat and Meat By-products, Chicken and Chicken By-products, Vegetables &Vegetable By-products, Vegetable Oils, Milk Powder, Iodised Salt, Essential Vitamins and Minerals, Cereals &Cereal By-products, Permitted Preservatives, Antioxidants &Flavours, No Beef Or Pork.",
+    "topCategory": "catTreat",
+    "petCategory": ["cat"],
+    "stock": 56,
+    "stars": 4.8,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/6t35kru5" },
+      { "id": 2, "url": "https://tinyurl.com/4bftsy62" },
+      { "id": 3, "url": "https://tinyurl.com/2p88ecsp" },
+      { "id": 4, "url": "https://tinyurl.com/53n6kzsn" }
+     ]
+  },
+   
+  {
+    "dealPrice":315,
+    "name": "Taiyo Special Fish Food",
+    "brand": "Taiyo",
+    "price":[
+            {
+              "1kg(5mm)":  {
+                  "originalPrice": 355,
+                  "dealPrice": 315,
+                  "discontPercent":10,
+                  "ImgbySize":"https://tinyurl.com/34n8njjn"
+                }
+            }            
+    ],
+    "description1": "Taiyo Economy 1kg Fast Growthing. Floating Type. Specialists Fish Food Never clouds the water. Size : 1.2mm,2.5mm,5mm Quantity: 1kg Product Description TAIYO is a balance staple diet for all tropical fish, it is scientifically developed to meet the basic dietary needs for healthy growth and lustrous skin, it helps to reduce water pollution with digestible ingredient.",
+    "description2": " High nutritious feed accelerating growth rate of Tropical Fish and Gold Fish. Contains natural ingredient outstandingly increase appetite. Spirulina added to give better color development, enhance lustrous skin and keep the fish in good body shape.",
+    "ingredients": "Crude Protein min 32% Crude Fat max 4% Crude Fiber max 5% Moisture max 10%",
+    "topCategory": "fishFood",
+    "petCategory": ["fish"],
+    "stock": 12,
+    "stars": 3.7,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/34n8njjn" },
+      { "id": 2, "url": "https://tinyurl.com/kascs6yp" },
+      { "id": 3, "url": "https://tinyurl.com/bdhzbmm3" },
+      { "id": 4, "url": "https://tinyurl.com/yrdfaydz" }
+     ]
+  },
+       
+  {
+    "dealPrice":414,
+    "name": "Boltz Cockatiel & Lovebird Food",
+    "brand": "Boltz",
+    "price":[
+            {
+              "1.2kg":  {
+                  "originalPrice": 499,
+                  "dealPrice": 414,
+                  "discontPercent":17,
+                  "ImgbySize":"https://tinyurl.com/3h3jzj32"
+                }
+            }            
+    ],
+    "description1": "Top quality food is a main source of Energy, Vitamins and Minerals for Cockatiel and Lovebird. Boltz bird food prepared of perfect variety of seed mix. Carefully mixed seeds is natural, clean, convenient and easy to use food",
+    "description2": "Excellent for Cockatiel and Lovebird Feather health. Boltz bird food is pure natural food. It does not contain any chemicals and Artificial Colors. Boltz bird food contains Cockatiel birds favorite Canary seeds and striped sunflower seed. It is easy to digest and avoid any digestive system problems.",
+    "ingredients": "Crude Protein min 32% Crude Fat max 4% Crude Fiber max 5% Moisture max 10%",
+    "topCategory": "birdFood",
+    "petCategory": ["bird"],
+    "stock": 22,
+    "stars": 4.2,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/3h3jzj32" },
+      { "id": 2, "url": "https://tinyurl.com/24n9y4sb" },
+      { "id": 3, "url": "https://tinyurl.com/5xx2wbey" },
+      { "id": 4, "url": "https://tinyurl.com/2p8ud4ec" }
+     ]
+  },
+    
+  {
+    "dealPrice":1093,
+    "name": "Harringtons Small Animal Optimum Rabbit Food",
+    "brand": "Harringtons",
+    "price":[
+            {
+              "2kg":  {
+                  "originalPrice": 1150,
+                  "dealPrice": 1093,
+                  "discontPercent":5,
+                  "ImgbySize":"https://tinyurl.com/4uwrb9d6"
+                }
+            },            
+            {
+              "10kg":  {
+                  "originalPrice": 4850,
+                  "dealPrice": 4200,
+                  "discontPercent":7,
+                  "ImgbySize":"https://tinyurl.com/4s76v7ds"
+                }
+            }
+    ],
+    "description1": "Harringtons Optimum Rabbit Food is a complementary feed for rabbits, containing a single all-in-one nugget to help avoid selective feeding. It contains a wide variety of high quality ingredient and is fortified with vitamins to help support your rabbits immune system",
+    "description2": "We add yeast extracts and high fibre ingredient to help promote healthy digestion. We recommend providing unlimited access to fresh hay or fresh grass and water as an essential part of your rabbits diet, which is needed to aid the digestive process. Harringtons provides the conventional benefits associated with premium pet foods.",
+    "ingredients": "Wheatfeed, Oatfeed, Lucerne, Sunflower Ext., Maize, Grass, Apple (4%), Grape (4%), Carob Meal, Vegetable Oil, Linseed, Minerals, Yeast (0.1%)",
+    "topCategory": "rabbitFood",
+    "petCategory": ["rabbit"],
+    "stock": 30,
+    "stars": 4.6,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/4uwrb9d6" },
+      { "id": 2, "url": "https://tinyurl.com/c5pkv5zj" },
+      { "id": 3, "url": "https://tinyurl.com/yc897uma" },
+      { "id": 4, "url": "https://tinyurl.com/2t43zjmu" }
+     ]
+  },
+    
+  {
+    "dealPrice":399,
+    "name": "Boltz Premium Guinea Pig Food",
+    "brand": "Boltz",
+    "price":[
+            {
+              "1.2kg":  {
+                  "originalPrice": 499,
+                  "dealPrice": 399,
+                  "discontPercent":20,
+                  "ImgbySize":"https://tinyurl.com/yju2ss62"
+                }
+            }            
+    ],
+    "description1": "Boltz Guinea pig food is specially prepared by our nutritionist in ISO 9001 certified plant. Highly tasty and Crispy pellets for guinea pig contains alphalpha meal, amino acids, acidifiers.",
+    "description2": " Boltz food contains synthetic vitamin C which is very important for Guinea pigs health. Boltz food is contains fiber and natural antioxidants which prevents your guinea pig from digestive problems. Pellets Shapes and textures supports dental health through natural chewing activity",
+    "ingredients": "Crude Protein min 32% Crude Fat max 4% Crude Fiber max 5% Moisture max 10%",
+    "topCategory": "guineaPig",
+    "petCategory": ["guineaPig"],
+    "stock": 48,
+    "stars": 4.5,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/yju2ss62" },
+      { "id": 2, "url": "https://tinyurl.com/2ucm5aw3" },
+      { "id": 3, "url": "https://tinyurl.com/39ze3695" },
+      { "id": 4, "url": "https://tinyurl.com/27tkd6ab" }
+     ]
+  },
+
+   
+  {
+    "dealPrice":1269,
+    "name": "Royal Canin Feline Health Nutrition Intense Beauty Adult Gravy Wet Cat Food-Pack of 12",
+    "brand": "royalCanin",
+    "price":[
+            {
+              "12 Pack":  {
+                  "originalPrice": 1380,
+                  "dealPrice": 1269,
+                  "discontPercent": 8,
+                  "ImgbySize":"https://tinyurl.com/ycy6tjuf"
+                }
+            }
+    ],
+    "description1": "Maintaining your cat's coat can be challenging, particularly in long-haired breeds. However, providing your cat with the right nutrients will greatly contribute to a healthy, shiny coat that truly shows off its natural beauty.",
+    "description2": "ROYAL CANIN Intense Beauty in Gravy contains high levels of omega-3 & omega-6 fatty acids to help your cat maintain a beautiful coat and healthy skin.",
+    "ingredients":"Cereal, Poulty & Poultry & Poultry By-Products, Oils (Palm, Soy), Soy Bean Meal,Flavours, Wheat Flour, Minerals, Corn Gluten Meal , Milk Powder, Vitamins, Iodised Salt, Methionine,  Taurine, Preservatives",
+    "topCategory": "forCats",
+    "petCategory": ["cat"],
+    "stock": 4,
+    "stars": 4,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/ycy6tjuf" },
+      { "id": 2, "url": "https://tinyurl.com/2r6rnpjr" },
+      { "id": 3, "url": "https://tinyurl.com/mpftysh2" },
+      { "id": 4, "url": "https://tinyurl.com/bdfk5fbx" }
+     ]
+  },  
+
+   
+  {
+    "dealPrice":301,
+    "name": "Purepet Clumping Lavender Fragrance Cat Litter (For multiple cats),",
+    "brand": "purePet",
+    "price":[
+            {
+              "5kg":  {
+                  "originalPrice": 320,
+                  "dealPrice": 301,
+                  "discontPercent": 6,
+                  "ImgbySize":"https://tinyurl.com/3uvwnm2n"
+                }
+            },
+            {
+              "10kg":  {
+                  "originalPrice": 570,
+                  "dealPrice": 541,
+                  "discontPercent": 5,
+                  "ImgbySize":"https://tinyurl.com/2shf89k3"
+                }
+            }
+    ],
+    "description1": "With Clumping Lavender Fragrance Cat Litte, you do not have to sacrifice clumpability and odor control when you decide to go clay-free!",
+    "description2": "The secret is our special blend of corn and cassava, two natural, renewable and biodegradable crops.",
+    "ingredients":"Clay, Bentonite",
+    "topCategory": "catLitter",
+    "petCategory": ["cat"],
+    "stock": 8,
+    "stars": 4,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/3uvwnm2n" },
+      { "id": 2, "url": "https://tinyurl.com/mud65n38" },
+      { "id": 3, "url": "https://tinyurl.com/4yxc8rja" },
+      { "id": 4, "url": "https://tinyurl.com/3uvwnm2n" }
+     ]
+  },  
+    
+   
+  {
+    "dealPrice":284,
+    "name": "Drools Absolute Salmon Oil Syrup - Dog Supplement",
+    "brand": "Drools",
+    "price":[
+            {
+              "150ml":  {
+                  "originalPrice": 299,
+                  "dealPrice": 284,
+                  "discontPercent": 5,
+                  "ImgbySize":"https://tinyurl.com/29ax36jc"
+                }
+            },
+            {
+              "300ml":  {
+                  "originalPrice": 599,
+                  "dealPrice": 569,
+                  "discontPercent": 0,
+                  "ImgbySize":"https://tinyurl.com/54d4yjmb"
+                }
+            }
+    ],
+    "description1": "Drools Absolute Salmon Oil Syrup is a great dog supplement that is sure to have your pup begging for more. It adds a delightful flavor to your pet's food, making mealtime more enjoyable. ",
+    "description2": "the concentrated DHA and EPA omega-3 fatty acids help nourish your pet's skin and promote a smooth, lustrous coat. These fatty acids are also known to promote strong immunity, good cardiovascular health, strong brain development and proper nervous function; making this the perfect supplement for dogs of all breeds and sizes.",
+    "ingredients":"Salmon Oil, All essential amino acids",
+    "topCategory": "petWellness",
+    "petCategory": ["cat"],
+    "stock": 18,
+    "stars": 4.6,
+    "images": [
+      { "id": 1, "url": "https://tinyurl.com/54d4yjmb" },
+      { "id": 2, "url": "https://tinyurl.com/ye2b4rmd" },
+      { "id": 3, "url": "https://tinyurl.com/fm87hdtx" },
+      { "id": 4, "url": "https://tinyurl.com/mr395hft" }
+     ]
+  } 
+    
   
 ]

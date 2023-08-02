@@ -1,31 +1,47 @@
 const mongoose = require('mongoose');   
 const productSchema = mongoose.Schema({
+    dealPrice:{
+        type: Number
+    },
     name: {
         type: String,
         required: true,
       },
+    brand: {
+        type: String,
+        required: true,
+      },
     price: {
-        type: Number,
-        required: [true, "price must be provided"],
+        type: mongoose.Mixed
+      },
+    description1: {
+        type: String,
     },
-    featured: {
-        type: Boolean,
-        default: false,
+    description2: {
+        type: String,
     },
-    rating: {
-        type: Number,
-        default: 4.9,
+    ingredients: {
+        type: String,
     },
+    topCategory: {
+        type: String
+    },
+    petCategory: {
+        type: Array
+    },
+    stock: {
+        type: Number
+    },
+    stars: {
+        type: Number
+    },
+    images: {
+        type: mongoose.Mixed
+      },
     createdAt: {
         type: Date,
         default: Date.now(),
-    },
-    company: {
-        type: String,
-        enum: {
-            values: ["apple", "samsung", "dell", "mi"],
-            message: `{VALUE} is not supported`,
-        },
-    },
+    }
+    
 })
 module.exports = mongoose.model('Product', productSchema)

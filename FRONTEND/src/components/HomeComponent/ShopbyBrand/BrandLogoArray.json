@@ -40,8 +40,8 @@
   "discount":"Upto 67% Off"
  },
  {
-  "name":"Himalayan",
-  "imgUrl":"./assests/HomePage/ShopByBrand/Himalayan.png",
+  "name":"Doggos",
+  "imgUrl":"https://tinyurl.com/3kapx4sv",
   "discount":"Upto 50% Off"
  },
  {
@@ -50,13 +50,13 @@
   "discount":"Upto 80% Off"
  },
  {
-  "name":"Acana",
-  "imgUrl":"./assests/HomePage/ShopByBrand/Acana.png",
+  "name":"Taiyo",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Taiyo.png",
   "discount":"Upto 25% Off"
  },
  {
-  "name":"Captzack",
-  "imgUrl":"./assests/HomePage/ShopByBrand/Captzack.png",
+  "name":"Boltz",
+  "imgUrl":"./assests/HomePage/ShopByBrand/boltz.png",
   "discount":"Upto 80% Off"
  },
  {
@@ -70,8 +70,8 @@
   "discount":"Upto 60% Off"
  },
  {
-  "name":"Temptation",
-  "imgUrl":"./assests/HomePage/ShopByBrand/Temptation.png",
+  "name":"Harringtons",
+  "imgUrl":"./assests/HomePage/ShopByBrand/Harringtons.png",
   "discount":"Upto 15% Off"
  }
 ]
