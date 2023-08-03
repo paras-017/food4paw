@@ -4,7 +4,7 @@ import {  MdVerifiedUser} from 'react-icons/md'
 import {  FaHospitalUser } from 'react-icons/fa'
 import {  GiMedicines } from 'react-icons/gi'
 import Doctor from '../../components/Doctors/Doctor'
-import Paws from '../../Common/Paws'
+import Paws from '../../common/Paws'
 
 
 const Vet = () => {

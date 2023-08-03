@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.style.css'
-import Paws from '../../Common/Paws'
+import Paws from '../../common/Paws'
 
 const About = () => {
   return (
