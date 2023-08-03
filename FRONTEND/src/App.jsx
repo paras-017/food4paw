@@ -10,6 +10,7 @@ import Vet from './pages/vet/Vet'
 import Cart from './pages/cart/Cart'
 import ErrorPage from './pages/errorPage/ErrorPage'
 import Footer from './components/Footer/Footer'
+import SingleProduct from './pages/singleProduct/SingleProduct'
 const App = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/singleproduct/:id' element={<SingleProduct/>}/>
         <Route path='/vet' element={<Vet/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='*' element={<ErrorPage/>}/>

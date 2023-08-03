@@ -13,7 +13,7 @@ const [mobMenu, setMobMenu] = useState(true)
    <div className='bg-gray-100  max-w-full '>
     <div className='justifyBetween  bg-gray-100 relative px-2 md:px-8 py-3 max-w-[95rem] m-auto'>
       <div className="nav-logo">
-       <NavLink to='/'><img src="./assests/HomePage/navbarLogo/navLogo.gif" alt="my logo" className=' border-red-800 h-12 md:h-14'/></NavLink>
+       <NavLink to='/'><img src="/assests/HomePage/navbarLogo/navLogo.gif" alt="my logo" className=' border-red-800 h-12 md:h-14'/></NavLink>
       </div>
       <div className="nav-links hidden md:flex">
         <ul className='flex gap-5 items-center'>

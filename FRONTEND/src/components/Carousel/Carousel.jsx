@@ -64,7 +64,7 @@ const Carousel = ({ slides, autoplayInterval }) => {
   useEffect(() => {
     const handleResize = () => {
       //window.innerWidth give different no  evry time
-      if(window.innerWidth <= 1272){
+      if(window.innerWidth <= 900){
         setIsMobile(true); // Adjust the breakpoint as needed
       }else{
         setIsMobile(false); // Adjust the breakpoint as needed
@@ -92,7 +92,7 @@ const Carousel = ({ slides, autoplayInterval }) => {
          <img
             src={isMobile ? slide.mobileSrc : slide.desktopSrc}
             alt={slide.alt}
-            className="w-full h-[20rem] md:h-full"
+            className="w-full md:h-[35rem] "
           />
         </div>
       ))}
