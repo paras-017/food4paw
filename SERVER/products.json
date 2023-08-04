@@ -46,6 +46,7 @@
     "petCategory": ["dog"],
     "stock": 67,
     "stars": 4,
+    "review":319,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/2p8byu37" },
       { "id": 2, "url": "https://tinyurl.com/2s3mems9" },
@@ -86,6 +87,7 @@
     "petCategory": ["dog"],
     "stock": 34,
     "stars": 4.8,
+    "review":89,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/bd4mpbuj" },
       { "id": 2, "url": "https://tinyurl.com/ms24x6vh" },
@@ -126,6 +128,7 @@
     "petCategory": ["cat"],
     "stock": 4,
     "stars": 4,
+    "review":456,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/267439rv" },
       { "id": 2, "url": "https://tinyurl.com/5924v3re" },
@@ -163,6 +166,7 @@
     "petCategory": ["cat"],
     "stock": 54,
     "stars": 5,
+    "review":258,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/3w7wekvb" },
       { "id": 2, "url": "https://tinyurl.com/mta7emk3" },
@@ -200,6 +204,7 @@
     "petCategory": ["dog"],
     "stock": 26,
     "stars": 4.6,
+    "review":340,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/3n3z7mba" },
       { "id": 2, "url": "https://tinyurl.com/2r6ek8zj" },
@@ -237,6 +242,7 @@
     "petCategory": ["cat"],
     "stock": 12,
     "stars": 4.3,
+    "review":212,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/7zn5v56e" },
       { "id": 2, "url": "https://tinyurl.com/mr2swnfj" },
@@ -282,6 +288,7 @@
     "petCategory": ["cat"],
     "stock": 24,
     "stars": 3.9,
+    "review":123,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/2p9c7dxv" },
       { "id": 2, "url": "https://tinyurl.com/4kannsf5" },
@@ -311,6 +318,7 @@
     "petCategory": ["dog","cat"],
     "stock": 24,
     "stars": 3.9,
+    "review":45,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/2p9c7dxv" },
       { "id": 2, "url": "https://tinyurl.com/4kannsf5" },
@@ -342,6 +350,7 @@
     "petCategory": ["dog"],
     "stock": 21,
     "stars": 4.5,
+    "review":549,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/bddeumnx" },
       { "id": 2, "url": "https://tinyurl.com/4c3xebrk" },
@@ -371,6 +380,7 @@
     "petCategory": ["cat"],
     "stock": 56,
     "stars": 4.8,
+    "review":2128,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/6t35kru5" },
       { "id": 2, "url": "https://tinyurl.com/4bftsy62" },
@@ -400,6 +410,7 @@
     "petCategory": ["fish"],
     "stock": 12,
     "stars": 3.7,
+    "review":859,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/34n8njjn" },
       { "id": 2, "url": "https://tinyurl.com/kascs6yp" },
@@ -429,6 +440,7 @@
     "petCategory": ["bird"],
     "stock": 22,
     "stars": 4.2,
+    "review":123,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/3h3jzj32" },
       { "id": 2, "url": "https://tinyurl.com/24n9y4sb" },
@@ -466,6 +478,7 @@
     "petCategory": ["rabbit"],
     "stock": 30,
     "stars": 4.6,
+    "review":657,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/4uwrb9d6" },
       { "id": 2, "url": "https://tinyurl.com/c5pkv5zj" },
@@ -495,6 +508,7 @@
     "petCategory": ["guineaPig"],
     "stock": 48,
     "stars": 4.5,
+    "review":1301,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/yju2ss62" },
       { "id": 2, "url": "https://tinyurl.com/2ucm5aw3" },
@@ -525,6 +539,7 @@
     "petCategory": ["cat"],
     "stock": 4,
     "stars": 4,
+    "review":1003,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/ycy6tjuf" },
       { "id": 2, "url": "https://tinyurl.com/2r6rnpjr" },
@@ -563,6 +578,7 @@
     "petCategory": ["cat"],
     "stock": 8,
     "stars": 4,
+    "review":2344,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/3uvwnm2n" },
       { "id": 2, "url": "https://tinyurl.com/mud65n38" },
@@ -601,6 +617,7 @@
     "petCategory": ["cat"],
     "stock": 18,
     "stars": 4.6,
+    "review":294,
     "images": [
       { "id": 1, "url": "https://tinyurl.com/54d4yjmb" },
       { "id": 2, "url": "https://tinyurl.com/ye2b4rmd" },

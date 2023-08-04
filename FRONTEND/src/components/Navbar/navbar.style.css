@@ -11,7 +11,7 @@
       transition: color 0.12s linear;
   }
   .navbar-link:hover {
-      color: #5f6fff;
+      color: #2ab1c3;
   }
   .navbar-link--cart{
     font-size: 1.1rem;
@@ -23,7 +23,7 @@
   position: absolute;
   bottom: 17px;
   left: 17px;
-  background: #5767fc;
+  background: #2ab1c3;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100%;
