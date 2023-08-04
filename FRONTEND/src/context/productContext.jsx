@@ -32,7 +32,7 @@ const AppProvider = ({children}) => {
      }
     }
 
-//----getSingleProduct  64ca4d186e5e67d0326ecc93
+//----getSingleProduct---------
     const getSingleProduct = async(url) => {
     dispatch({type:"SET_SINGLE_LOADING"})
     try {
