@@ -7,6 +7,7 @@ const API = `https://food4pawsapi-production.up.railway.app/api/products`
 import styles from './singleProduct.module.css'
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
+import Loading from '../../common/Loading';
 
 const SingleProduct = () => {
   const {getSingleProduct,isSingleLoading,singleProduct}=useProductContext()
@@ -17,7 +18,7 @@ const SingleProduct = () => {
   const [priceInfo, setpriceInfo] = useState({ImgbySize:""})
 
   const [mainImg, setMainImg] = useState(mainImage)
-console.log(mainImg)
+
 
   useEffect(() => {
     const defaultWeight = Object.keys(price[0])[0];
@@ -36,11 +37,16 @@ console.log(mainImg)
 
   }
 
-  if(isSingleLoading)return<div>Loadding</div>
+  if(isSingleLoading){
+    return(<div className={`${styles.justifyCenter} h-[30rem]`}><Loading/></div>)
+  }
       
   
   
   return (
+    
+     
+    
    <div className="container m-auto">
 
      <div className="flex">

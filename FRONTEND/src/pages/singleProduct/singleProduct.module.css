@@ -38,3 +38,8 @@
     color: rgb(255 255 255 / var(--tw-text-opacity));
     cursor: not-allowed;
 }
+.justifyCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
