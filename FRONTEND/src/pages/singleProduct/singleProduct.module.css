@@ -44,3 +44,8 @@
     justify-content: center;
   
 }
+.grayBorder{
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}

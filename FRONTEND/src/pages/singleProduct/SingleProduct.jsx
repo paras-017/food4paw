@@ -60,22 +60,22 @@ const SingleProduct = () => {
     setQuantity(newQuantity);
   };
   return (
-   <div className="container m-auto">
+   <div className="container m-auto p-3">
   
-     <div className="flex">
-        <div className='IMAGES-SECTION'>
+     <div className="flex flex-col md:flex-row  ">
+        <div className={`IMAGES-SECTION  h-fit ${styles.justifyCenter} flex-col space-y-2 my-4`}>
             {/*------------Main-image------------ */}
-            <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[26rem] border ${styles.justifyCenter}`}>
+            <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[29rem]  ${styles.justifyCenter} ${styles.grayBorder}`}>
               
-            <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-contain  h-full w-full`}/>
+            <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-contain  h-full w-full `}/>
             </div>
             
             {/*------------Other-img------------ */}
-            <div className='flex'>
+            <div className='flex gap-1'>
                 {images?.map((curElem,i)=>{
                     return (
                         <figure key={i}>
-                            <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className='h-[8rem]'/>
+                            <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className={`h-[8rem] ${styles.grayBorder}  p-2`}/>
                         </figure>
                     )
                   })}
@@ -83,10 +83,10 @@ const SingleProduct = () => {
         </div>
 
 
-        <div className=' IMAGES-SECTION  max-w-[31rem] '>
+        <div className=' DETAILS-SECTION  max-w-[31rem] '>
             {/* ------Name------ */}
             <div className="nameReview">
-              <p>{brand}</p>
+              <p className=''>{brand}</p>
               <h1>{name}</h1>
               <Star  className='bg-green-300 ' stars={stars} reviews={review}/>
               
