@@ -14,11 +14,10 @@ const SingleProduct = () => {
   const {_id}=useParams()
   const {_id:Pid,name,brand,price=[{}],description1,description2,ingredients,stock,stars,review,images=[{url:''}],mainImage} = singleProduct
   const [selectedWeight, SetSelectedWeight] = useState('')
-
   const [priceInfo, setpriceInfo] = useState({ImgbySize:""})
-
   const [mainImg, setMainImg] = useState(mainImage)
 
+  const [transformParams, setTransformParams] = useState({x: 0,y: 0,scale: 1});
 
   useEffect(() => {
     const defaultWeight = Object.keys(price[0])[0];
@@ -41,19 +40,30 @@ const SingleProduct = () => {
     return(<div className={`${styles.justifyCenter} h-[30rem]`}><Loading/></div>)
   }
       
-  
-  
-  return (
-    
-     
-    
-   <div className="container m-auto">
+  const handleMouseMove = (e) => {
+    const x = e.clientX - e.target.offsetLeft;
+    const y = e.clientY - e.target.offsetTop;
+   
+    setTransformParams({ x, y, scale: 1.6 });
+  };
 
+  const handleMouseLeave = () => {
+    setTransformParams({ x: 0, y: 0, scale: 1 });
+  };
+  const { x, y, scale } = transformParams;
+  const imgStyle = {
+    transformOrigin: `${x}px ${y}px`,
+    transform: `scale(${scale})`
+  };
+  return (
+   <div className="container m-auto">
+  
      <div className="flex">
       <div>
           {/*------------Main-image------------ */}
-          <div className=" p-2 ">
-          <img src={mainImg} alt='main-img' className=' h-[24rem]'/>
+          <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[26rem] border ${styles.justifyCenter}`}>
+            
+           <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-cover  h-full w-full`}/>
           </div>
           
           {/*------------Other-img------------ */}
