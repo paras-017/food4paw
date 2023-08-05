@@ -8,6 +8,7 @@ import styles from './singleProduct.module.css'
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Loading from '../../common/Loading';
+import QuantityButton from '../../components/SingleProduct/QuantityButton';
 
 const SingleProduct = () => {
   const {getSingleProduct,isSingleLoading,singleProduct}=useProductContext()
@@ -16,7 +17,7 @@ const SingleProduct = () => {
   const [selectedWeight, SetSelectedWeight] = useState('')
   const [priceInfo, setpriceInfo] = useState({ImgbySize:""})
   const [mainImg, setMainImg] = useState(mainImage)
-
+  const [quantity, setQuantity] = useState(1);
   const [transformParams, setTransformParams] = useState({x: 0,y: 0,scale: 1});
 
   useEffect(() => {
@@ -55,31 +56,34 @@ const SingleProduct = () => {
     transformOrigin: `${x}px ${y}px`,
     transform: `scale(${scale})`
   };
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
   return (
    <div className="container m-auto">
   
      <div className="flex">
-      <div>
-          {/*------------Main-image------------ */}
-          <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[26rem] border ${styles.justifyCenter}`}>
+        <div className='IMAGES-SECTION'>
+            {/*------------Main-image------------ */}
+            <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[26rem] border ${styles.justifyCenter}`}>
+              
+            <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-contain  h-full w-full`}/>
+            </div>
             
-           <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-cover  h-full w-full`}/>
-          </div>
-          
-          {/*------------Other-img------------ */}
-          <div className='flex'>
-              {images?.map((curElem,i)=>{
-                  return (
-                      <figure key={i}>
-                          <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className='h-[8rem]'/>
-                      </figure>
-                  )
-                })}
-          </div>
-      </div>
+            {/*------------Other-img------------ */}
+            <div className='flex'>
+                {images?.map((curElem,i)=>{
+                    return (
+                        <figure key={i}>
+                            <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className='h-[8rem]'/>
+                        </figure>
+                    )
+                  })}
+            </div>
+        </div>
 
 
-        <div className=' DETAILS  max-w-[31rem] '>
+        <div className=' IMAGES-SECTION  max-w-[31rem] '>
             {/* ------Name------ */}
             <div className="nameReview">
               <p>{brand}</p>
@@ -130,11 +134,13 @@ const SingleProduct = () => {
             {/* ------Quantity------ */}
             <div className="quantity-section">
               <h1>Quantity</h1>
-              <div>- 0 +</div>
+              <QuantityButton quantity={quantity} onQuantityChange={handleQuantityChange} />
             </div>
       
             {/* ------Add to Cart Button------ */}
-            {priceInfo.discontPercent<=0?<button disabled onClick={()=>console.log('BAD')}  className={styles.disabledbutton}>Notify Me</button>:<button onClick={()=>console.log('GOOD')}   className={styles.abledbutton}>Add To Cart</button>}
+            <div className='addProduct-Button'>
+             {priceInfo.discontPercent<=0?<button disabled onClick={()=>console.log('BAD')}  className={styles.disabledbutton}>Notify Me</button>:<button onClick={()=>console.log('GOOD')}   className={styles.abledbutton}>Add To Cart</button>}
+            </div>
           
 
             {/* ------Warranty------ */} 
