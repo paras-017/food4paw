@@ -60,10 +60,10 @@ const SingleProduct = () => {
     setQuantity(newQuantity);
   };
   return (
-   <div className="container m-auto p-3">
+   <div className={`container m-auto p-3`} >
   
-     <div className="flex flex-col md:flex-row  ">
-        <div className={`IMAGES-SECTION  h-fit ${styles.justifyCenter} flex-col space-y-2 my-4`}>
+     <div className="flex flex-col md:flex-row justify-center md:space-x-8">
+        <div className={`IMAGES-SECTION  h-fit ${styles.justifyCenter} flex-col space-y-2 my-4 md:my-0`}>
             {/*------------Main-image------------ */}
             <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[29rem]  ${styles.justifyCenter} ${styles.grayBorder}`}>
               
@@ -83,11 +83,11 @@ const SingleProduct = () => {
         </div>
 
 
-        <div className=' DETAILS-SECTION  max-w-[31rem] '>
+        <div className=' DETAILS-SECTION  max-w-[31rem] space-y-2'>
             {/* ------Name------ */}
-            <div className="nameReview">
-              <p className=''>{brand}</p>
-              <h1>{name}</h1>
+            <div className="nameReview space-y-1">
+              <p className='font-normal text-sm text-gray-600'>{brand}</p>
+              <h1 className='text-xl md:text-2xl'>{name}</h1>
               <Star  className='bg-green-300 ' stars={stars} reviews={review}/>
               
             </div>
@@ -144,35 +144,19 @@ const SingleProduct = () => {
           
 
             {/* ------Warranty------ */} 
-            <div className="warranty-section">
-              <div className={styles.productDataWarranty}>
-                  <div className={styles.productWarrantyData}>
-                    <TbTruckDelivery className={styles.warrantyIcon} />
-                    <p>Free Delivery</p>
-                  </div>
-
-                  <div className={styles.productWarrantyData}>
-                    <TbReplace className={styles.warrantyIcon} />
-                    <p>30 Days Replacement</p>
-                  </div>
-
-                  <div className={styles.productWarrantyData}>
-                    <TbTruckDelivery className={styles.warrantyIcon} />
-                    <p>Thapa Delivered </p>
-                  </div>
-
-                  <div className={styles.productWarrantyData}>
-                    <MdSecurity className={styles.warrantyIcon} />
-                    <p>2 Year Warranty </p>
-                  </div>
-                </div>
+            <div className="warranty-section flex">
+              <img src="/assests/SingleProduct/1.png" alt=""  className='w-20'/>
+              <img src="/assests/SingleProduct/2.png" alt=""  className='w-20'/>
+              <img src="/assests/SingleProduct/3.png" alt=""  className='w-20'/>
+              <img src="/assests/SingleProduct/4.png" alt=""  className='w-20'/>
+                
             </div>
 
             {/*------Description------ */}
             <div className='descriptions space-y-4'>
-              <p>{description1}</p>
-              <p>{description2}</p>
-              {ingredients && <p><span className='font-medium'>Ingredients: </span>{ingredients}</p>}
+              <p className='text-sm text-black ' >{description1}</p>
+              <p className='text-sm text-black ' >{description2}</p>
+              {ingredients && <p className='text-sm' ><span className='font-medium'>Ingredients: </span>{ingredients}</p>}
             </div>
           
 

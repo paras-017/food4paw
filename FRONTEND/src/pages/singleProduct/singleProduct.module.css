@@ -1,22 +1,4 @@
-.productDataWarranty {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 1rem;
-}
 
-.productWarrantyData {
-    text-align: center;
-}
-.warrantyIcon {
-    background-color: rgba(220, 220, 220, 0.5);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.6rem;
-  }
 .abledbutton{
     background-color: #2ab1c3;
     width: 100%;
