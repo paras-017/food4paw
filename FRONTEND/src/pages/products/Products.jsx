@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
 import FilterSection from '../../components/ProductsPage/FilterSection/FilterSection'
 import Sort from '../../components/ProductsPage/Sort/Sort'
 import ProductList from '../../components/ProductsPage/ProductList/ProductList'
-const Products = () => {
-  
+import { useFilterContext } from '../../context/FilterContext'
 
+const Products = () => {
+  const {filter_products, all_products} = useFilterContext()
+  console.log('filter_products',filter_products)
+  console.log('all_products',all_products)
   return (
     <div className='container m-auto bg-gray-500'>
 

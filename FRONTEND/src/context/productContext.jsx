@@ -1,6 +1,7 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useReducer } from "react";
 import reducer from "../reducer/productReducer";
+import Products from "../pages/products/Products";
 
 const AppContext = createContext()
 
@@ -25,7 +26,7 @@ const AppProvider = ({children}) => {
      try {
         const res = await axios.get(url)
         const products = await res.data
-        dispatch({type:"SET_API_DATA", payload:products})
+        dispatch({type:"SET_API_DATA", payload:products['Products']})
      } catch (error) {
         console.log(`Product Context API ${error}`)
         dispatch({type:"API_ERROR"})
