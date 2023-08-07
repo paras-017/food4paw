@@ -1,0 +1,16 @@
+.sortBtn {
+    padding: 0.8rem 0.3rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid;
+  }
+.icon {
+    font-size: 1.5rem;
+  }
+.active{
+background: black;
+color: white;
+}

@@ -12,7 +12,7 @@ const ProductList = () => {
   if(grid_view === false){
     return <Listview products={filter_products}/>
   }
-
+    
 }
 
 export default ProductList

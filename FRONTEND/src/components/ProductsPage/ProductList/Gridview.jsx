@@ -1,11 +1,11 @@
 import React from 'react'
-import ProductCard from './ProductCard'
+import ProductCard from './ProductCardGrid'
 
 const Gridview = ({products}) => {
 
   return (
    <div className="section">
-    <div className="grid grid-cols-3 gap-2 place-items-center mt-2">
+    <div className=" grid md:grid-cols-3 grid-cols-2 p-4 md:p-2 gap-4 md:gap-3 place-items-center mt-2">
         {products.map((curElem)=>{
             return <ProductCard key={curElem._id} {...curElem}/>
         })}

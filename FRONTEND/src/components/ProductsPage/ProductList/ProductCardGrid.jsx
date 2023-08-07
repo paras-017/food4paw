@@ -1,14 +1,17 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa";
 import FormatPrice from '../../../common/FormatPrice'
+import { NavLink } from 'react-router-dom';
+import styles from './ProductList.module.css'
+
 const ProductCard = (curElem) => {
     const { _id, name,brand,price,stars,review,mainImage} = curElem;
     const weight = Object.keys(price[0])[0]
     const pricebySize = price[0][weight]
     const trimmedName = name.length > 51 ? name.slice(0, 51) + '...' : name;
   return (
-    <>
-     <div className="card_body h-[19rem] w-[14rem] bg-white shadow-lg rounded-md p-2 space-y-3">
+    <NavLink to={`/singleProduct/${_id}`}>
+     <div className={` ${styles.main} card_body h-[19rem] w-[14rem] bg-white shadow-lg rounded-md p-2 space-y-3`}>
         <div className="Image h-[10rem] w-full">
             <img src={mainImage} alt="" className='h-full w-full object-contain '/>
         </div>
@@ -35,7 +38,7 @@ const ProductCard = (curElem) => {
             </div>
         </div>
      </div>
-    </>    
+    </NavLink>    
   )
 }
 
