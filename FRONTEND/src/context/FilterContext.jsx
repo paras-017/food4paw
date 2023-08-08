@@ -21,6 +21,9 @@ export const FilterContextProvider =({children})=>{
     const setListView = () =>{
         return dispatch({type:"SET_LIST_VIEW"})
     }
+    const sorting = () => {
+        
+    }
 
     useEffect(() => {
         dispatch({type:"LOAD_FILTER_PRODUCTS", payload:products})

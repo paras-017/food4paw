@@ -17,7 +17,7 @@ const Products = () => {
           
           {/* ------------Sort & Product List------------ */}
           <div className="md:w-4/5 w-full">
-            <div className="">
+            <div className=" p-4">
               {/* Mobile view: Sort above Product List */}
               <Sort />
             </div>

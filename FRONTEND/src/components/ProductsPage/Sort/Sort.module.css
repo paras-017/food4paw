@@ -1,11 +1,11 @@
-.sortBtn {
-    padding: 0.8rem 0.3rem;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: 1px solid;
+.gridListBtn {
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 1.5rem/* 24px */;
+  --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    padding: 0.25rem/* 4px */;
   }
 .icon {
     font-size: 1.5rem;
