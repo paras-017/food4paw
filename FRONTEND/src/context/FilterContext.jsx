@@ -8,6 +8,7 @@ const initialState = {
     filter_products : [],
     all_products:[],
     grid_view:true,
+    sorting_value:'bestSelling',
 }
 
 
@@ -21,10 +22,16 @@ export const FilterContextProvider =({children})=>{
     const setListView = () =>{
         return dispatch({type:"SET_LIST_VIEW"})
     }
-    const sorting = () => {
-        
+    const sorting = (e) => {
+        let userValue = e.target.value;
+        console.log('userValue', userValue)
+        dispatch({type:"GET_SORT_VALUE", payload:userValue})
     }
 
+    useEffect(() => {
+       dispatch({type:"SORTING_PRODUCTS", payload:products})
+    }, [products,state.sorting_value])
+    
     useEffect(() => {
         dispatch({type:"LOAD_FILTER_PRODUCTS", payload:products})
         //usign products as dependency array ifnot it will just just send empty product array
@@ -32,7 +39,7 @@ export const FilterContextProvider =({children})=>{
         
 
     return (
-        <FilterContext.Provider value={{...state, setGridView, setListView}}>
+        <FilterContext.Provider value={{...state, setGridView, setListView, sorting}}>
            {children}
         </FilterContext.Provider>
     )

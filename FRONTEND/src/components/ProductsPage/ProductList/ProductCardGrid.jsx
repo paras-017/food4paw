@@ -11,8 +11,8 @@ const ProductCard = (curElem) => {
     const trimmedName = name.length > 51 ? name.slice(0, 51) + '...' : name;
   return (
     <NavLink to={`/singleProduct/${_id}`}>
-     <div className={` ${styles.main} card_body h-[19rem] w-[14rem] bg-white shadow-lg rounded-md p-2 space-y-3`}>
-        <div className="Image h-[10rem] w-full">
+     <div className={` ${styles.main} card_body h-[19rem] sm:h-[23rem] md:w-[15rem] bg-white shadow-lg rounded-md p-2  space-y-3`}>
+        <div className="Image h-[9rem] sm:h-[14rem] w-full">
             <img src={mainImage} alt="" className='h-full w-full object-contain '/>
         </div>
         <div className="DETAIL space-y-2">

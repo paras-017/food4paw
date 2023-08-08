@@ -7,7 +7,7 @@ import { useFilterContext } from '../../context/FilterContext'
 const Products = () => {
 
   return (
-    <div className='container m-auto '>
+    <div className='container m-auto  '>
 
       <div className="flex flex-col md:flex-row">
           {/* ------------Filter Section (visible on md)------------ */}
@@ -16,7 +16,7 @@ const Products = () => {
           </div>
           
           {/* ------------Sort & Product List------------ */}
-          <div className="md:w-4/5 w-full">
+          <div className="md:w-4/5 max-w-4xl ">
             <div className=" p-4">
               {/* Mobile view: Sort above Product List */}
               <Sort />

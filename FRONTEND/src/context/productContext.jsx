@@ -5,7 +5,7 @@ import Products from "../pages/products/Products";
 
 const AppContext = createContext()
 
-const API =  `https://food4pawsapi-production.up.railway.app/api/products`
+const API =  `https://food4pawsapi-production.up.railway.app/api/products?sort=-stars`
 const initialState = {
     isLoading:false,
     isError:false,

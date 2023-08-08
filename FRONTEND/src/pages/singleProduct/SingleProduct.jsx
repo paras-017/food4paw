@@ -65,9 +65,9 @@ const SingleProduct = () => {
      <div className="flex flex-col md:flex-row justify-center md:space-x-8">
         <div className={`IMAGES-SECTION  h-fit ${styles.justifyCenter} flex-col space-y-2 my-4 md:my-0`}>
             {/*------------Main-image------------ */}
-            <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[26rem] w-[29rem]  ${styles.justifyCenter} ${styles.grayBorder}`}>
+            <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className= {` overflow-hidden h-[19rem] w-[21rem] sm:h-[26rem] sm:w-[29rem]  ${styles.justifyCenter} ${styles.grayBorder}`}>
               
-            <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-contain  h-full w-full `}/>
+              <img src={mainImg} alt='main-img' style={imgStyle}  className={`cursor-zoom-in transform-gpu transition-transform duration-300 ease-in-out object-contain  h-full w-full `}/>
             </div>
             
             {/*------------Other-img------------ */}
@@ -75,7 +75,7 @@ const SingleProduct = () => {
                 {images?.map((curElem,i)=>{
                     return (
                         <figure key={i}>
-                            <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className={`h-[8rem] ${styles.grayBorder}  p-2`}/>
+                            <img src={curElem.url} alt="" onClick={() => setMainImg(curElem.url)} className={` h-[6rem] sm:h-[8rem] ${styles.grayBorder}  p-2`}/>
                         </figure>
                     )
                   })}

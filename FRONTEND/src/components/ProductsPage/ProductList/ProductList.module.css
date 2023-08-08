@@ -32,3 +32,12 @@
     transition: scale 300ms ease-in-out;
     scale: 1.1;
 }
+
+@media (max-width: 768px) {
+    .button {
+        width: 32%;
+        font-size: x-small;
+        padding-top: 0.26rem/* 12px */;
+        padding-bottom: 0.26rem/* 12px */;
+    }
+  }

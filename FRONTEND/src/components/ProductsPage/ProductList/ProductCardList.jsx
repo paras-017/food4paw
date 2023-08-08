@@ -14,8 +14,8 @@ const ProductCardList = (curElem) => {
     const description = description1.length > 100 ? description1.slice(0, 100) + '...' : description1;
   return (
     <NavLink to={`/singleProduct/${_id}`}>
-     <div className={`${styles.main} flex sm:pt-4 space-x-3 h-fit w-[50rem] shadow-lg rounded-md p-2`}>
-        <div className="Image   h-[10rem] sm:h-[12rem] md:w-[18rem]">
+     <div className={`${styles.main} flex sm:pt-4 space-x-3 h-fit   shadow-lg rounded-md p-2`}>
+        <div className="Image   h-[13rem] sm:h-[13rem] md:w-[18rem]">
             <img src={mainImage} alt="" className='h-full w-full object-contain'/>
         </div>
         <div className="DETAIL md:space-y-3 space-y-2">
@@ -35,7 +35,7 @@ const ProductCardList = (curElem) => {
             </div>
 
    
-              <p className='text-sm max-w-md'>{description}</p>
+              <p className='text-xs sm:text-sm max-w-md'>{description}</p>
      
 
             <div className="PRICE flex space-x-2 s m">

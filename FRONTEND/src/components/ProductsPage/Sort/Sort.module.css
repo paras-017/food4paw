@@ -14,3 +14,11 @@
 background: black;
 color: white;
 }
+
+@media (max-width: 768px) {
+  .gridListBtn {
+    font-size: 1.2rem;
+    width: 1.1rem;
+    padding: 0.15rem/* 4px */;
+  }
+}
