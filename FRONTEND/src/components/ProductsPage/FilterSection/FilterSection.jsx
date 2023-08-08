@@ -13,6 +13,7 @@ const FilterSection = () => {
                  value={text}
                  onChange={updateFilterValue} 
                  className='rounded-md border-gray-700 border-2'
+                 placeholder='Search Product'
                  />
         </form>
       </div>
