@@ -13,9 +13,14 @@ const filterReducer = (state, action) => {
             grid_view:true
         }
     case "SET_LIST_VIEW":
-        return{
-            ...state,
-            grid_view:false
+          return{
+             ...state,
+                grid_view:false
+            }
+    case "SET_GRID_VIEW":
+       return{
+          ...state,
+          grid_view:true
         }
     case "GET_SORT_VALUE":
         return{
@@ -62,21 +67,37 @@ const filterReducer = (state, action) => {
             
         }
     case "FILTER_PRODUCTS":
-        console.log('FILTER_PRODUCTS')
         let {all_products} = state
         let tempFilterProducts = [...all_products]
-        const {text} = state.filters;
+        const {text, selectedCategories} = state.filters;
         if(text){
             console.log('hello')
             tempFilterProducts = tempFilterProducts.filter((curElem)=>{
               return curElem.name.toLowerCase().includes(text)
             })
         }
-        
+        if (selectedCategories.length > 0 && !selectedCategories.includes('ALL')) {
+          tempFilterProducts = tempFilterProducts.filter((curElem) => {
+            return selectedCategories.includes(curElem.topCategory);
+          });
+        }
         return {
           ...state,
           filter_products:tempFilterProducts
         }
+
+    case "UPDATE_SELECTED_CATEGORIES":
+  
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          selectedCategories: action.payload,
+        },
+      };
+        
+
+    
   
     default: state;
   }

@@ -11,6 +11,7 @@ const initialState = {
     sorting_value:'bestSelling',
     filters:{
         text:'',
+        selectedCategories:[]
     }
 }
 
@@ -30,15 +31,42 @@ export const FilterContextProvider =({children})=>{
         console.log('userValue', userValue)
         dispatch({type:"GET_SORT_VALUE", payload:userValue})
     }
+    const getUniqueData=(data, property)=>{
+        let newValue = data.map((curElem)=>{
+          return curElem[property]
+        })
+        return newValue = ["ALL", ...new Set(newValue)]
+       
+      }
     const updateFilterValue = (e)=>{
         let name = e.target.name
         let value = e.target.value
+        if(name==='supercategory'){
+
+        }
+        console.log(name,value)
       return dispatch({type:'UPDATE_FILTER_VALUE', payload:{name, value}})
     }
+    const handleCategoryChange = (curElem) => {
+        const selectedCategories = [...state.filters.selectedCategories];
+      
+        if (selectedCategories.includes(curElem)) {
+          // If the category is already selected, remove it
+          const updatedCategories = selectedCategories.filter(
+            (category) => category !== curElem
+          );
+          dispatch({ type: 'UPDATE_SELECTED_CATEGORIES', payload: updatedCategories });
+        } else {
+          // If the category is not selected, add it
+          selectedCategories.push(curElem);
+          dispatch({ type: 'UPDATE_SELECTED_CATEGORIES', payload: selectedCategories });
+        }
+      };
 
     useEffect(() => {
        dispatch({type:'FILTER_PRODUCTS'})
-       dispatch({type:"SORTING_PRODUCTS", payload:products})
+       dispatch({type:"SORTING_PRODUCTS", payload:products}) 
+       console.log(state.filters.selectedCategories)   
     }, [products,state.sorting_value,state.filters])
     
     useEffect(() => {
@@ -48,7 +76,14 @@ export const FilterContextProvider =({children})=>{
         
 
     return (
-        <FilterContext.Provider value={{...state, setGridView, setListView, sorting, updateFilterValue}}>
+        <FilterContext.Provider value={{...state,
+                                        setGridView, 
+                                        setListView, 
+                                        sorting, 
+                                        updateFilterValue,
+                                        getUniqueData,
+                                        handleCategoryChange
+                                        }}>
            {children}
         </FilterContext.Provider>
     )
