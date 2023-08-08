@@ -6,7 +6,7 @@ const Sort = () => {
   const {filter_products,setGridView, setListView,grid_view,sorting} =useFilterContext();
 
   return (
-    <div className='flex justify-between items-end sm:px-5 mt-8 '>
+    <div className='flex justify-between items-end  mt-4 '>
       <div className="md:space-x-4 space-x-1">
         <button onClick={()=>setGridView()}>
          {grid_view?(<BsFillGridFill className={`${styles.active} ${styles.gridListBtn}`}/>):(<BsFillGridFill className={`${styles.gridListBtn}`}/>)} 
