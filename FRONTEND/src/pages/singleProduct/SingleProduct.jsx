@@ -9,6 +9,7 @@ import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Loading from '../../common/Loading';
 import QuantityButton from '../../components/SingleProduct/QuantityButton';
+import normalLoading from '/assests/others/normalLoading.gif';
 
 const SingleProduct = () => {
   const {getSingleProduct,isSingleLoading,singleProduct}=useProductContext()
@@ -38,7 +39,7 @@ const SingleProduct = () => {
   }
 
   if(isSingleLoading){
-    return(<div className={`${styles.justifyCenter} h-[30rem]`}><Loading/></div>)
+    return(<div className={`${styles.justifyCenter} h-[30rem]`}><Loading loadingImg={normalLoading}/></div>)
   }
       
   const handleMouseMove = (e) => {

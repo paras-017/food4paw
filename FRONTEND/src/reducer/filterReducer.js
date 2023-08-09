@@ -61,12 +61,19 @@ const filterReducer = (state, action) => {
             filter_products:newSortData,
         }
     case "UPDATE_FILTER_VALUE":
+      const {autoSuggest} = state
         const {name, value} = action.payload
+        const {suggestions} = state.filters;
+        const filteredSuggestions =value.trim() === '' ?[]:autoSuggest.filter(
+          (suggestion) => suggestion.toLowerCase().includes(value.toLowerCase())
+        );
+        
         return{
             ...state,
             filters:{
                 ...state.filters,
-                [name]:value
+                [name]:value,
+                suggestions:filteredSuggestions
             }
             
         }
@@ -103,7 +110,6 @@ const filterReducer = (state, action) => {
           ...state,
           filter_products:tempFilterProducts
         }
-
     case "UPDATE_SELECTED_CATEGORIES":
       return {
           ...state,

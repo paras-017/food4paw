@@ -4,7 +4,7 @@ import FormatPrice from '../../../common/FormatPrice'
 import styles from './Filter.module.css'
 import { RiArrowDownSFill } from 'react-icons/ri';
 const FilterSection = () => {
-  const {filters:{text,selectedCategories,price,maxPrice,minPrice}, updateFilterValue,all_products,getUniqueData, handleCategoryChange,ClearFilter} = useFilterContext()
+  const {filters:{text,selectedCategories,price,maxPrice,minPrice,suggestions}, updateFilterValue,all_products,getUniqueData, handleCategoryChange,ClearFilter} = useFilterContext()
 
   const superCategory = getUniqueData(all_products,'topCategory')
   const [isSuperCategoryOpen, setSuperCategoryIsOpen] = useState(false);
@@ -28,15 +28,23 @@ const FilterSection = () => {
       
       {/*-----------Search-----------*/}
       <div className="py-1 SEARCH hidden sm:block ">
-        <form onSubmit={(e)=>e.preventDefault()}>
-          <input type="text"
-                 name='text'
-                 value={text}
-                 onChange={updateFilterValue} 
-                 className='rounded-md border-gray-500 px-1 border-2 w-full p-1'
-                 placeholder='Search Product'
-                 />
-        </form>
+      <form onSubmit={(e) => e.preventDefault()}>
+        <input
+          type="text"
+          name="text"
+          value={text}
+          onChange={updateFilterValue}
+          autoComplete="off"
+          list="suggestions"
+          className="rounded-md border-gray-500 px-1 border-2 w-full py-1"
+          placeholder="Search Product"
+        />
+        <datalist id="suggestions">
+          {suggestions.map((suggestion) => (
+            <option key={suggestion} value={suggestion.toLowerCase()} />
+          ))}
+        </datalist>
+      </form>
       </div>
 
       {/*-----------SuperCategory-----------*/}

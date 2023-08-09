@@ -11,7 +11,7 @@ const Products = () => {
 
       <div className="flex flex-col md:flex-row  xl:w-[70rem] ">
           {/* ------------Filter Section (visible on md)------------ */}
-          <div className="md:w-[25%] lg:w-[22%] hidden md:flex border   border-gray-200 rounded-xl h-1/3 justify-center mt-8 sticky top-4 ">
+          <div className="md:w-[25%] lg:w-[22%]  hidden md:flex border   border-gray-200 rounded-xl h-fit mb-4 justify-center mt-8 sticky top-4 ">
             <FilterSection />
           </div>
           

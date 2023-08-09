@@ -9,8 +9,11 @@ const initialState = {
     all_products:[],
     grid_view:true,
     sorting_value:'bestSelling',
+    autoSuggest:['me-o','whiskas', 'drool', 'kitten', 'dog','cat','Pedigree Adult Dry Dog','Cat Food','dog food','Taiyo','Fish Food'],
+    
     filters:{
         text:'',
+        suggestions:[],
         selectedCategories:[],
         maxPrice: 0,
         price: 0,
@@ -47,10 +50,7 @@ export const FilterContextProvider =({children})=>{
     const updateFilterValue = (e)=>{
         let name = e.target.name
         let value = e.target.value
-        if(name==='supercategory'){
-
-        }
-      return dispatch({type:'UPDATE_FILTER_VALUE', payload:{name, value}})
+        return dispatch({type:'UPDATE_FILTER_VALUE', payload:{name, value}})
     }
     const handleCategoryChange = (curElem) => {
         const selectedCategories = [...state.filters.selectedCategories];

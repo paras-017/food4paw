@@ -1,10 +1,10 @@
 import React from 'react'
-import loadingImage from './Loading.gif';
+// import loadingImage from './Loading.gif';
 
-const Loading = () => {
+const Loading = ({loadingImg}) => {
   return (
     <div>
-       <img src={loadingImage} alt="my logo" className='w-[30rem]'/>
+       <img src={loadingImg} alt="my logo" className='w-[30rem]'/>
     </div>
   )
 }
