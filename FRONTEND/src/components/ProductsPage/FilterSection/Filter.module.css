@@ -1,0 +1,45 @@
+.sortBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  color: #333333; /* You mentioned text-gray-800, but #333333 is a common shade for gray text */
+  font-weight: bold;
+  border-radius: 0.25rem; /* Rounded */
+  border-color: #3182ce; /* Blue-500 */
+  border-bottom-width: 2px;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+}
+
+.sortBtn:hover {
+  border-color: #2c5282; /* Blue-600 */
+  background-color: #4299e1; /* Blue-500 on hover */
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.filterBtn{
+  background-color: #3182ce;
+    width: 70%;
+    border-radius: 0.3rem/* 8px */;
+    padding-top: 0.6rem/* 12px */;
+    padding-bottom: 0.6rem/* 12px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+}
+:hover.filterBtn{
+  background-color: #0084ff;
+    scale: 1.009;
+}
+.price{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+}

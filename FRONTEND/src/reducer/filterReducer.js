@@ -1,11 +1,15 @@
 const filterReducer = (state, action) => {
   switch (action.type) {
     case "LOAD_FILTER_PRODUCTS":
+        let priceArr = action.payload.map((curElem) => curElem.dealPrice);
+        let maxPrice = Math.max(...priceArr);
+       
         return{
             ...state,
             //We are using the copy of filter_products,all_products
             filter_products:[...action.payload],
-            all_products:[...action.payload]
+            all_products:[...action.payload],
+            filters: { ...state.filters, maxPrice, price: maxPrice },
         }
     case "SET_GRID_VIEW":
         return{
@@ -69,17 +73,31 @@ const filterReducer = (state, action) => {
     case "FILTER_PRODUCTS":
         let {all_products} = state
         let tempFilterProducts = [...all_products]
-        const {text, selectedCategories} = state.filters;
+        const {text, selectedCategories,price } = state.filters;
         if(text){
-            console.log('hello')
             tempFilterProducts = tempFilterProducts.filter((curElem)=>{
               return curElem.name.toLowerCase().includes(text)
             })
         }
         if (selectedCategories.length > 0 && !selectedCategories.includes('ALL')) {
-          tempFilterProducts = tempFilterProducts.filter((curElem) => {
-            return selectedCategories.includes(curElem.topCategory);
+          tempFilterProducts = tempFilterProducts.filter((curElem,i) => {
+            
+           
+            return (
+              selectedCategories.includes(curElem.brand) || 
+              selectedCategories.includes(curElem.topCategory) ||
+              selectedCategories.includes(curElem.petCategory[0])
+            );
           });
+        }
+        if (price === 0) {
+          tempFilterProducts = tempFilterProducts.filter(
+            (curElem) => curElem.dealPrice == price
+          );
+        } else {
+          tempFilterProducts = tempFilterProducts.filter(
+            (curElem) => curElem.dealPrice <= price
+          );
         }
         return {
           ...state,
@@ -87,15 +105,26 @@ const filterReducer = (state, action) => {
         }
 
     case "UPDATE_SELECTED_CATEGORIES":
-  
+      return {
+          ...state,
+          filters: {
+            ...state.filters,
+            selectedCategories: action.payload,
+          },
+        };
+      
+    case "CLEAR_FILTERS":
       return {
         ...state,
-        filters: {
+        filters:{
           ...state.filters,
-          selectedCategories: action.payload,
-        },
-      };
-        
+          text:'',
+          selectedCategories:[],
+          maxPrice: state.filters.maxPrice,
+          price: state.filters.maxPrice,
+          minPrice: state.filters.minPrice,
+        }
+      }
 
     
   

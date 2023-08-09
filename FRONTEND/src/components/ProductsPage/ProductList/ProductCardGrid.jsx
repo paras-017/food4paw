@@ -9,10 +9,11 @@ const ProductCard = (curElem) => {
     const weight = Object.keys(price[0])[0]
     const pricebySize = price[0][weight]
     const trimmedName = name.length > 51 ? name.slice(0, 51) + '...' : name;
+    // sm:bg-red-400 md:bg-red-600 lg:bg-red-800
   return (
     <NavLink to={`/singleProduct/${_id}`}>
-     <div className={` ${styles.main} card_body h-[19rem] sm:h-[23rem] md:w-[15rem] bg-white shadow-lg rounded-md p-2  space-y-3`}>
-        <div className="Image h-[9rem] sm:h-[14rem] w-full">
+     <div className={` ${styles.main} card_body h-[19rem] sm:h-[23rem] md:w-[12rem] md:h-[22rem] lg:w-[15rem] xl:w-[17rem] xl:h-[21rem] bg-white shadow-lg rounded-md p-2  space-y-3 `}>
+        <div className="Image h-[9rem] sm:h-[12rem] md:h-[15] w-full">
             <img src={mainImage} alt="" className='h-full w-full object-contain '/>
         </div>
         <div className="DETAIL space-y-2">
