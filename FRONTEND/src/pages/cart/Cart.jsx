@@ -1,27 +1,31 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useCartContext } from '../../context/cartContext'
 import FormatPrice from '../../common/FormatPrice'
-import { RiDeleteBinLine } from 'react-icons/ri';
-import QuantityButton from '../../components/SingleProduct/QuantityButton';
+
 import { NavLink } from 'react-router-dom';
+import CartItem from '../../components/CartPage/CartItem';
 
 const Cart = ({ item, removeItem }) => {
-  // const {cart} = useCartContext()
-  // console.log(cart)
-  const cart2 = [
-    {id: '64ce528650c22fb2982fcc0bMedium', name: 'Jer-High Fuzzy Bird Cat Toy', selectedWeight: 'Medium', quantity: 3, image: 'https://tinyurl.com/7zn5v56e',priceInfo:182, stock:50},
+  const {cart} = useCartContext()
 
-    {id: '64ce528650c22fb2982fcc0e5 pack', name: 'Doggos Baby Monster Pack (pack of 5)', selectedWeight: '5 pack', quantity: 6, image: 'https://tinyurl.com/bddeumnx',priceInfo:1288, stock:50},
+  if(!cart.length){
+    return(
+      <div className='flex items-center justify-center flex-col '>
+        <img src="./assests/others/emptyCart.gif" alt="" className='w-[30rem]'/>
+        <NavLink to='/products'>
+          <h1 className='text-xl underline text-cyan-700 my-8'>back to Shopping</h1>
+        </NavLink>
+      </div>
+      )
+  }
 
-    {id: '64ce528650c22fb2982fcc155kg', name: 'Purepet Clumping Lavender Fragrance Cat Litter (For multiple cats),', selectedWeight: '5kg', quantity: 2, image: 'https://tinyurl.com/3uvwnm2n', priceInfo:301, stock:50}
-  ]
-  const [quantity, setQuantity] = useState(1)
-  const setDecrease = () => {
-      quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1);
-    };
-  const setIncrease = () => {
-      quantity < 50 ? setQuantity(quantity + 1) : setQuantity(50);
-    };
+  // const cart2 = [
+  //   {id: '64ce528650c22fb2982fcc0bMedium', name: 'Jer-High Fuzzy Bird Cat Toy', selectedWeight: 'Medium', quantity: 3, image: 'https://tinyurl.com/7zn5v56e',priceInfo:182, stock:50},
+
+  //   {id: '64ce528650c22fb2982fcc0e5 pack', name: 'Doggos Baby Monster Pack (pack of 5)', selectedWeight: '5 pack', quantity: 6, image: 'https://tinyurl.com/bddeumnx',priceInfo:1288, stock:50},
+
+  //   {id: '64ce528650c22fb2982fcc155kg', name: 'Purepet Clumping Lavender Fragrance Cat Litter (For multiple cats),', selectedWeight: '5kg', quantity: 2, image: 'https://tinyurl.com/3uvwnm2n', priceInfo:301, stock:50}
+  // ]
   return (
 
    <div className='max-w-[75rem] m-auto px-3'>
@@ -36,40 +40,9 @@ const Cart = ({ item, removeItem }) => {
         <div className="allProducs b w-full ">
           {/* ----Product Card---- */}
           <div className='space-y-8 '>
-          {
-            cart2.map((item,i)=>(
-              <div key={i} className='shadow-md rounded-md p-1'>
-                <div className="flex justify-between space-x-4">
-                {/* IMAGE & INFO */}
-                <div className='img&Info flex '>
-                  {/*----IMAGE---- */}
-                  <div className="IMAGE h-[6rem] w-[6rem]">
-                    <img src={item.image} alt="" />
-                  </div>
-                  {/*----INFO----*/}
-                  <div className="INFO space-y-2">
-                    <h1 className='w-[8rem] sm:w-[28rem] text-sm'>{item.name}</h1>
-                    <div>
-                    <p className='text-gray-600 text-sm sm:text-base'><FormatPrice price={item.priceInfo}/></p>
-                    <p className='text-gray-600 text-sm sm:text-base'>Size: {item.selectedWeight}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* -----QUANTITY------ */}
-                <div className='quantiy&Price relative'>
-                  <div className=''>
-                    <QuantityButton quantity={quantity} setDecrease={setDecrease} setIncrease={setIncrease}/>
-                    <button className='absolute right-0 bottom-0 bg-gray-800 text-white w-full rounded-md p-1'><FormatPrice price={item.priceInfo}/></button>
-                  </div>
-
-                </div>
-                </div>
-              </div>
-            )
-              
-            )
-          }
+          {cart.map((item,i)=>{
+              return <CartItem key={item.id} {...item}/>
+          })}
           </div>
 
         </div>
