@@ -27,4 +27,4 @@ const CartProvider = ({children})=>{
 const useCartContext = () => {
     return useContext(CartContext)
 }
-export {CartProvider}
+export {CartProvider,useCartContext}

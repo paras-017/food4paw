@@ -1,8 +1,8 @@
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
-        
-        break;
+        let {selectedWeight,quantity,priceInfo,product} = action.payload
+        console.log(product)
   
     default:
         break;

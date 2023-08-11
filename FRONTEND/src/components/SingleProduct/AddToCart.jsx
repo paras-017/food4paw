@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import QuantityButton from './QuantityButton';
 import { NavLink } from 'react-router-dom';
 import styles from './SPComponent.module.css'
+import { useCartContext } from '../../context/cartContext';
 
 
 const AddToCart = ({selectedWeight,priceInfo, stock,product}) => {
-    
+     const {addToCart} = useCartContext()    
     const [quantity, setQuantity] = useState(1)
     const setDecrease = () => {
         quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1);
