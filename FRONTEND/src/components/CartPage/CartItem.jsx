@@ -4,15 +4,8 @@ import FormatPrice from '../../common/FormatPrice';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { useCartContext } from '../../context/cartContext';
 
-const CartItem = ({id,image,name,priceInfo,selectedWeight}) => {
-    const {removeItem}=useCartContext()
-    const [quantity, setQuantity] = useState(1)
-    const setDecrease = () => {
-        quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1);
-      };
-    const setIncrease = () => {
-        quantity < 50 ? setQuantity(quantity + 1) : setQuantity(50);
-      };
+const CartItem = ({id,image,name,priceInfo,selectedWeight,quantity}) => {
+    const {removeItem, setDecrease, setIncrement}=useCartContext()
   return (
     
     <div className='shadow-md rounded-md p-1 '>
@@ -36,7 +29,7 @@ const CartItem = ({id,image,name,priceInfo,selectedWeight}) => {
         {/* -----QUANTITY------ */}
         <div className='quantiy&Price relative'>
         <div className='flex    space-x-3'>
-            <QuantityButton quantity={quantity} setDecrease={setDecrease} setIncrease={setIncrease}/>
+            <QuantityButton quantity={quantity} setDecrease={()=>setDecrease(id)} setIncrease={()=>setIncrease(id)}/>
              <button onClick={()=>removeItem(id)}><RiDeleteBinLine className='font-bold text-xl '/></button>
             <button className='absolute right-0 bottom-0 bg-gray-800 text-white w-full rounded-md p-1'><FormatPrice price={priceInfo*quantity}/></button>
         </div>

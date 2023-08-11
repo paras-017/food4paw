@@ -8,7 +8,7 @@ import CartItem from '../../components/CartPage/CartItem';
 const Cart = ({ item, removeItem }) => {
   const {cart} = useCartContext()
 
-  if(cart.length===[]){
+  if(cart.length===0){
     return(
       <div className='flex items-center justify-center flex-col '>
         <img src="./assests/others/emptyCart.gif" alt="" className='w-[30rem]'/>
@@ -19,13 +19,6 @@ const Cart = ({ item, removeItem }) => {
       )
   }
 
-  // const cart2 = [
-  //   {id: '64ce528650c22fb2982fcc0bMedium', name: 'Jer-High Fuzzy Bird Cat Toy', selectedWeight: 'Medium', quantity: 3, image: 'https://tinyurl.com/7zn5v56e',priceInfo:182, stock:50},
-
-  //   {id: '64ce528650c22fb2982fcc0e5 pack', name: 'Doggos Baby Monster Pack (pack of 5)', selectedWeight: '5 pack', quantity: 6, image: 'https://tinyurl.com/bddeumnx',priceInfo:1288, stock:50},
-
-  //   {id: '64ce528650c22fb2982fcc155kg', name: 'Purepet Clumping Lavender Fragrance Cat Litter (For multiple cats),', selectedWeight: '5kg', quantity: 2, image: 'https://tinyurl.com/3uvwnm2n', priceInfo:301, stock:50}
-  // ]
   return (
 
    <div className='max-w-[75rem] m-auto px-3'>
