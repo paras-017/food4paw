@@ -5,7 +5,7 @@ import styles from './SPComponent.module.css'
 import { useCartContext } from '../../context/cartContext';
 
 
-const AddToCart = ({selectedWeight,priceInfo, stock,product}) => {
+const AddToCart = ({selectedWeight,priceInfo, stock,product, Pid}) => {
      const {addToCart} = useCartContext()    
     const [quantity, setQuantity] = useState(1)
     const setDecrease = () => {
@@ -21,8 +21,8 @@ const AddToCart = ({selectedWeight,priceInfo, stock,product}) => {
    <div className='addProduct-Button'>
     {priceInfo.discontPercent<=0
     ?<button disabled className={styles.disabledbutton}>Notify Me</button>:
-    <NavLink to='/cart' onClick={()=>addToCart(selectedWeight,quantity,priceInfo,product)}>
-     <button className={styles.abledbutton}>Add To Cart</button>
+    <NavLink to='/cart' >
+     <button className={styles.abledbutton} onClick={()=>addToCart(selectedWeight,quantity,priceInfo,product,Pid)}>Add To Cart</button>
     </NavLink>
     }
     </div>

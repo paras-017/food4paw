@@ -132,7 +132,7 @@ const SingleProduct = () => {
             </div>
 
             {/*------ quantity and AddtoCart button------ */}
-            <AddToCart selectedWeight={selectedWeight} priceInfo={priceInfo} stock={stock} product={singleProduct}/>
+            <AddToCart selectedWeight={selectedWeight} priceInfo={priceInfo} stock={stock} product={singleProduct} Pid={Pid}/>
           
 
             {/* ------Warranty------ */} 

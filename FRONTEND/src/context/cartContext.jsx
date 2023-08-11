@@ -12,8 +12,8 @@ const initialState = {
 const CartProvider = ({children})=>{
     const [state, dispatch] = useReducer(reducer, initialState) 
 
-    const addToCart=(selectedWeight,quantity,priceInfo,product)=>{
-     dispatch({type:"ADD_TO_CART", payload:{selectedWeight,quantity,priceInfo,product}})
+    const addToCart=(selectedWeight,quantity,priceInfo,product,Pid)=>{
+     dispatch({type:"ADD_TO_CART", payload:{selectedWeight,quantity,priceInfo,product,Pid}})
     }
 
     return (
