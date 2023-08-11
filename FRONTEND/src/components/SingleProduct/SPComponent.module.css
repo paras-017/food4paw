@@ -1,0 +1,33 @@
+
+.abledbutton{
+    background-color: #2ab1c3;
+    width: 100%;
+    border-radius: 0.5rem/* 8px */;
+    padding-top: 0.75rem/* 12px */;
+    padding-bottom: 0.75rem/* 12px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.disabledbutton{
+    background-color: #97f3ff;
+    width: 100%;
+    border-radius: 0.5rem/* 8px */;
+    padding-top: 0.75rem/* 12px */;
+    padding-bottom: 0.75rem/* 12px */;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    cursor: not-allowed;
+}
+.justifyCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.grayBorder{
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}

@@ -5,11 +5,10 @@ import FormatPrice from '../../common/FormatPrice';
 import Star from '../../components/SingleProduct/Star';
 const API = `https://food4pawsapi-production.up.railway.app/api/products`
 import styles from './singleProduct.module.css'
-import { MdSecurity } from "react-icons/md";
-import { TbTruckDelivery, TbReplace } from "react-icons/tb";
 import Loading from '../../common/Loading';
 import QuantityButton from '../../components/SingleProduct/QuantityButton';
 import normalLoading from '/assests/others/normalLoading.gif';
+import AddToCart from '../../components/SingleProduct/AddToCart';
 
 const SingleProduct = () => {
   const {getSingleProduct,isSingleLoading,singleProduct}=useProductContext()
@@ -132,16 +131,8 @@ const SingleProduct = () => {
               <div>Available:{priceInfo.discontPercent<=0?<span className='text-red-700'> Out of Stock</span>:(<span className='text-green-600'> In Stock</span>)}</div>
             </div>
 
-            {/* ------Quantity------ */}
-            <div className="quantity-section">
-              <h1>Quantity</h1>
-              <QuantityButton quantity={quantity} onQuantityChange={handleQuantityChange} />
-            </div>
-      
-            {/* ------Add to Cart Button------ */}
-            <div className='addProduct-Button'>
-             {priceInfo.discontPercent<=0?<button disabled onClick={()=>console.log('BAD')}  className={styles.disabledbutton}>Notify Me</button>:<button onClick={()=>console.log('GOOD')}   className={styles.abledbutton}>Add To Cart</button>}
-            </div>
+            {/*------ quantity and AddtoCart button------ */}
+            <AddToCart selectedWeight={selectedWeight} priceInfo={priceInfo} stock={stock} product={singleProduct}/>
           
 
             {/* ------Warranty------ */} 
