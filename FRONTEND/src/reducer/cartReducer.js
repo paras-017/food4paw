@@ -8,7 +8,6 @@ const cartReducer = (state, action) => {
          let updatedProduct = cart.map((curItem)=>{
           if(curItem.id==Pid+selectedWeight){
             let newQuantity = curItem.quantity+quantity
-            console.log(newQuantity)
             return{
               ...curItem,
               quantity:newQuantity
@@ -50,7 +49,7 @@ const cartReducer = (state, action) => {
         cart: updatedCart
       }
     
-      case 'SET_DECREMENT':
+    case 'SET_DECREMENT':
         let updatedProductData = state.cart.map((curElem) => {
             if (curElem.id === action.payload) {
               let decAmount = curElem.quantity - 1;
@@ -87,9 +86,23 @@ const cartReducer = (state, action) => {
             }
           });
           return { ...state, cart: updatedProduct };
-          
-    
-  
+       
+    case "CART_TOTAL_ITEM_PRICE":
+      let {total_item, total_price} = state.cart.reduce((initialVal, curElem)=>{
+         let {priceInfo,quantity} = curElem
+         initialVal.total_item += quantity
+         initialVal.total_price += priceInfo*quantity
+         
+         return initialVal
+      },{total_item:0,total_price:0})
+
+      return{
+        ...state,
+        total_item, 
+        total_price
+      }
+
+
     default:
         break;
   }

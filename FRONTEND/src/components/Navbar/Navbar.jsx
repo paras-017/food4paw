@@ -3,12 +3,13 @@ import './navbar.style.css'
 import { NavLink } from 'react-router-dom'
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
+import { useCartContext } from '../../context/cartContext';
 
 
 
 const Navbar = () => {
 const [mobMenu, setMobMenu] = useState(true)
-
+const {total_item}= useCartContext()
   return (
    <div className='bg-gray-100  max-w-full '>
     <div className='justifyBetween  bg-gray-100 relative px-2 md:px-8 py-3 max-w-[95rem] m-auto'>
@@ -24,7 +25,7 @@ const [mobMenu, setMobMenu] = useState(true)
           <li><NavLink className='navbar-link' to='/vet'>Vet</NavLink></li>
           <li>
               <NavLink to="/cart" className="navbar-link--cart relative">
-                <FiShoppingCart className=' text-3xl' /><span className="cartQuantity items-center"> 7 </span>
+                <FiShoppingCart className=' text-3xl' /><span className="cartQuantity items-center"> {total_item} </span>
               </NavLink>
           </li>
         </ul>

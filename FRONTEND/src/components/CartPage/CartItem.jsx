@@ -29,7 +29,7 @@ const CartItem = ({id,image,name,priceInfo,selectedWeight,quantity}) => {
         {/* -----QUANTITY------ */}
         <div className='quantiy&Price relative'>
         <div className='flex    space-x-3'>
-            <QuantityButton quantity={quantity} setDecrease={()=>setDecrease(id)} setIncrease={()=>setIncrease(id)}/>
+            <QuantityButton quantity={quantity} setDecrease={()=>setDecrease(id)} setIncrease={()=>setIncrement(id)}/>
              <button onClick={()=>removeItem(id)}><RiDeleteBinLine className='font-bold text-xl '/></button>
             <button className='absolute right-0 bottom-0 bg-gray-800 text-white w-full rounded-md p-1'><FormatPrice price={priceInfo*quantity}/></button>
         </div>

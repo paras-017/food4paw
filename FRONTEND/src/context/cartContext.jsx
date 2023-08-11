@@ -4,7 +4,6 @@ const CartContext = createContext()
 
 const getLocalCartData =()=>{
     let localCartData = localStorage.getItem('cart')
-    console.log(localCartData)
     if(localCartData === [])return []
     else return JSON.parse(localCartData)
 }
@@ -13,6 +12,7 @@ const initialState = {
     // cart:[],
     cart:getLocalCartData(),
     total_item:"",
+    total_price:"",
     total_quantity:"",
     shipping_fee:125,
 }
@@ -39,7 +39,8 @@ const CartProvider = ({children})=>{
 
     // Saving data to localStorage
     useEffect(() => {
-      localStorage.setItem("cart",JSON.stringify(state.cart))
+        dispatch({type:"CART_TOTAL_ITEM_PRICE"})
+        localStorage.setItem("cart",JSON.stringify(state.cart))
     }, [state.cart])
     
 

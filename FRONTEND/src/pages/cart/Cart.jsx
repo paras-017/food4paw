@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import CartItem from '../../components/CartPage/CartItem';
 
 const Cart = ({ item, removeItem }) => {
-  const {cart} = useCartContext()
+  const {cart,total_price} = useCartContext()
 
   if(cart.length===0){
     return(
@@ -64,7 +64,7 @@ const Cart = ({ item, removeItem }) => {
           <div className='total space-y-1 py-3'>
             <div className='subTotal flex justify-between'>
               <h1 className=''>Subtotal</h1>
-              <p className='font-bold'><FormatPrice price={3244}/></p>
+              <p className='font-bold'><FormatPrice price={total_price}/></p>
             </div>
             <div className='subTotal flex justify-between'>
               <h1 className=''>Delivery Charges</h1>
@@ -76,7 +76,7 @@ const Cart = ({ item, removeItem }) => {
             </div>
             <div className='subTotal flex justify-between'>
               <h1 className=''>Order Total</h1>
-              <p className='font-bold'><FormatPrice price={3394}/></p>
+              <p className='font-bold'><FormatPrice price={150+total_price}/></p>
             </div>
           </div>
 
