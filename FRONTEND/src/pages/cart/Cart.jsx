@@ -8,7 +8,7 @@ import CartItem from '../../components/CartPage/CartItem';
 const Cart = ({ item, removeItem }) => {
   const {cart} = useCartContext()
 
-  if(!cart.length){
+  if(cart.length===[]){
     return(
       <div className='flex items-center justify-center flex-col '>
         <img src="./assests/others/emptyCart.gif" alt="" className='w-[30rem]'/>
