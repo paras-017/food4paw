@@ -4,8 +4,8 @@ import React from "react";
 
 const Card = ({ name, imgUrl, discount }) => {
   return (
-    <div className="m-auto ">
-      <div className=" shadow-xl rounded-lg overflow-hidden   md:flex flex-col items-center justify-center md:h-[12rem]  md:w-[12rem] w-[10rem]">
+    <div className="m-auto">
+      <div className=" shadow-xl rounded-lg overflow-hidden   md:flex flex-col items-center justify-center md:h-[12rem]  md:w-[12rem] w-[8rem]">
         <div className="flex justify-center items-center h-20">
             <img src={imgUrl} alt={name} className="  bg-white w-full h-[6rem] object-contain" />
         </div>
