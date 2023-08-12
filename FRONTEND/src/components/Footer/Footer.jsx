@@ -1,10 +1,13 @@
 import React from 'react'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import './footer.style.css'
+import Paws from '../../common/Paws';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-300'>
+    <div className='relative top-[10rem]'>
+        <Paws/>
+        <div className='bg-gray-300'>
         <footer className='max-w-[85rem] m-auto space-y-2 '>
         <div className='flex md:flex-row flex-col justify-between px-4 space-y-4 md:space-y-0 pt-5 md:pt-10'>
                 <div className="explores flex space-x-3 md:space-x-12">
@@ -62,6 +65,7 @@ const Footer = () => {
         <hr className=''/>
         <div className='text-center '>© 2023 Food4Paws</div>
         </footer>
+        </div>
     </div>
   )
 }

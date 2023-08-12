@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { FiMapPin, FiPhone } from 'react-icons/fi';
-import Paws from '../../common/Paws';
+
 
 const Contact = () => {
   return (
@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <Paws/>  
+  
     </>
   );
 };
