@@ -102,7 +102,11 @@ const cartReducer = (state, action) => {
         total_price,
         total_originalPrice
       }
-
+    case "INITIALIZE_CART":
+      return {
+         ...state,
+          cart: action.payload 
+        };
 
     default:
         break;
