@@ -4,7 +4,7 @@ const CartContext = createContext()
 
 const getLocalCartData =()=>{
     let localCartData = localStorage.getItem('cart')
-    if(localCartData === [])return []
+    if(localCartData.length === 0)return []
     else return JSON.parse(localCartData)
 }
 
@@ -12,6 +12,7 @@ const initialState = {
     // cart:[],
     cart:getLocalCartData(),
     total_item:"",
+    total_originalPrice:"",
     total_price:"",
     total_quantity:"",
     shipping_fee:125,
@@ -25,7 +26,6 @@ const CartProvider = ({children})=>{
     }
     //Removing item from cart Array
     const removeItem = (id)=>{
-        console.log(id)
      dispatch({type:"REMOVE_ITEM", payload:id})
     }
     // Increment and decrement of product quantity
@@ -39,6 +39,7 @@ const CartProvider = ({children})=>{
 
     // Saving data to localStorage
     useEffect(() => {
+        
         dispatch({type:"CART_TOTAL_ITEM_PRICE"})
         localStorage.setItem("cart",JSON.stringify(state.cart))
     }, [state.cart])

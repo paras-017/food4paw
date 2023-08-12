@@ -30,7 +30,8 @@ const cartReducer = (state, action) => {
               quantity,
               image:priceInfo.ImgbySize,
               max:product.stock,
-              priceInfo:priceInfo.dealPrice
+              priceInfo:priceInfo.dealPrice,
+              originalPrice:priceInfo.originalPrice
             }
             return{
               ...state,
@@ -39,11 +40,9 @@ const cartReducer = (state, action) => {
           }        
 
     case "REMOVE_ITEM":
-      console.log('removing item')
       // let {cart} = state
       let id = action.payload
       let updatedCart = state.cart.filter((curItem)=>curItem.id !== id)
-      console.log(updatedCart)
       return{
         ...state,
         cart: updatedCart
@@ -88,18 +87,20 @@ const cartReducer = (state, action) => {
           return { ...state, cart: updatedProduct };
        
     case "CART_TOTAL_ITEM_PRICE":
-      let {total_item, total_price} = state.cart.reduce((initialVal, curElem)=>{
-         let {priceInfo,quantity} = curElem
+      let {total_item, total_price,total_originalPrice} = state.cart.reduce((initialVal, curElem)=>{
+         let {priceInfo,quantity,originalPrice} = curElem
          initialVal.total_item += quantity
          initialVal.total_price += priceInfo*quantity
+         initialVal.total_originalPrice += originalPrice*quantity
          
          return initialVal
-      },{total_item:0,total_price:0})
+      },{total_item:0,total_price:0,total_originalPrice:0})
 
       return{
         ...state,
         total_item, 
-        total_price
+        total_price,
+        total_originalPrice
       }
 
 

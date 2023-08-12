@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import CartItem from '../../components/CartPage/CartItem';
 
 const Cart = ({ item, removeItem }) => {
-  const {cart,total_price} = useCartContext()
+  const {cart,total_price,total_originalPrice} = useCartContext()
 
   if(cart.length===0){
     return(
@@ -34,6 +34,7 @@ const Cart = ({ item, removeItem }) => {
           {/* ----Product Card---- */}
           <div className='space-y-8 '>
           {cart.map((item,i)=>{
+           
               return <CartItem key={item.id} {...item}/>
           })}
           </div>
@@ -60,23 +61,34 @@ const Cart = ({ item, removeItem }) => {
             </div>
           </div>
 
-          {/* Total Detail */}
+            {/* ---------Total Detail--------- */}
           <div className='total space-y-1 py-3'>
+            {/* ---------Total MRP--------- */}
+            <div className='subTotal flex justify-between'>
+              <h1 className=''>Total MRP</h1>
+              <p className='font-bold'><FormatPrice price={total_originalPrice}/></p>
+            </div>
+            {/* ---------Disoncount on MRP--------- */}
+            <div className='subTotal flex justify-between'>
+              <h1 className=''>Discont on MRP</h1>
+              <p className='font-bold text-green-600'>- <FormatPrice price={total_originalPrice-total_price}/></p>
+            </div>
+            {/* ---------Subtotal--------- */}
             <div className='subTotal flex justify-between'>
               <h1 className=''>Subtotal</h1>
               <p className='font-bold'><FormatPrice price={total_price}/></p>
             </div>
+        
+            {/* ---------Delivery Charges--------- */}
             <div className='subTotal flex justify-between'>
               <h1 className=''>Delivery Charges</h1>
-              <p className='font-bold'><FormatPrice price={150}/></p>
+              <p className='font-bold text-red-500'>+ <FormatPrice price={50}/></p>
             </div>
+            <div className='border-b-2 py-2 border-gray-300'></div>
+            {/* ---------Total Amount--------- */}
             <div className='subTotal flex justify-between'>
-              <h1 className=' '>Discount</h1>
-              <p className='font-bold text-green-600'><FormatPrice price={150}/></p>
-            </div>
-            <div className='subTotal flex justify-between'>
-              <h1 className=''>Order Total</h1>
-              <p className='font-bold'><FormatPrice price={150+total_price}/></p>
+              <h1 className=''>Total amount</h1>
+              <p className='font-bold'><FormatPrice price={50+total_price}/></p>
             </div>
           </div>
 

@@ -5,6 +5,7 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 import { useCartContext } from '../../context/cartContext';
 
 const CartItem = ({id,image,name,priceInfo,selectedWeight,quantity}) => {
+    
     const {removeItem, setDecrease, setIncrement}=useCartContext()
   return (
     
