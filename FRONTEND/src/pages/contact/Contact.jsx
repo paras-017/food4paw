@@ -1,9 +1,10 @@
 
 import React from 'react';
 import { FiMapPin, FiPhone } from 'react-icons/fi';
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Contact = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
   return (
     <>
     <div className="   py-8">
@@ -28,10 +29,10 @@ const Contact = () => {
             <h2 className="text-2xl font-bold mb-4">Drop in your details, and we’ll get back to you!</h2>
             <form className='bg-white p-3 rounded-2xl' action="https://formspree.io/f/mrgweewe" method="POST">
               <div className="mb-4">
-                <input placeholder='Full Name' type="text"  name="name" className="w-full bg-orange-50 p-2 border border-gray-300 rounded" required />
+                <input placeholder='Full Name' type="text"  name="name" className="w-full bg-orange-50 p-2 border border-gray-300 rounded" defaultValue={isAuthenticated ? user.name:''} required />
               </div>
               <div className="mb-4">
-                <input placeholder='Email' type="email" name="email" className="w-full bg-orange-50 p-2 border border-gray-300 rounded" required />
+                <input placeholder='Email' type="email" name="email" className="w-full bg-orange-50 p-2 border border-gray-300 rounded" defaultValue={isAuthenticated ? user.email:''} required />
               </div>
               <div className="mb-4">
                 <textarea placeholder='Type your message here' name="message" rows="4" className="w-full bg-orange-50 p-2 border border-gray-300 rounded" required></textarea>

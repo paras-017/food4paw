@@ -1,0 +1,1 @@
+ <li><button className='bg-cyan-500 p-1 rounded-md text-white' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</button></li>:
