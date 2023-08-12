@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCartContext } from '../../context/cartContext'
 import FormatPrice from '../../common/FormatPrice'
-
+import GooglePayButton from '@google-pay/button-react'
 import { NavLink } from 'react-router-dom';
 import CartItem from '../../components/CartPage/CartItem';
 
@@ -93,9 +93,52 @@ const Cart = ({ item, removeItem }) => {
           </div>
 
           {/* CheckOut Button */}
-          <button className='bg-[#2ab1c3] text-white font-bold w-full p-4 rounded-md'>
-            Proceed To CheckOut
-          </button>
+         <div className="buttons flex items-center justify-center ">
+         <GooglePayButton
+               environment="TEST"
+               buttonColor="black"
+               buttonType="buy"
+               buttonLocale="en"
+               buttonSizeMode="fill"
+               style={{width: '100%', height: 40}}
+              paymentRequest={{
+                apiVersion: 2,
+                apiVersionMinor: 0,
+                allowedPaymentMethods: [
+                  {
+                    type: 'CARD',
+                    parameters: {
+                      allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                      allowedCardNetworks: ['MASTERCARD', 'VISA'],
+                    },
+                    tokenizationSpecification: {
+                      type: 'PAYMENT_GATEWAY',
+                      parameters: {
+                        gateway: 'example',
+                        gatewayMerchantId: 'exampleGatewayMerchantId',
+                      },
+                    },
+                  },
+                ],
+                merchantInfo: {
+                  merchantId: '12345678901234567890',
+                  merchantName: 'Demo Merchant',
+                },
+                transactionInfo: {
+                  totalPriceStatus: 'FINAL',
+                  totalPriceLabel: 'Total',
+                  totalPrice: `${50+total_price}`,
+                  currencyCode: 'USD',
+                  countryCode: 'US',
+                },
+              }}
+              onLoadPaymentData={paymentRequest => {
+                console.log('TODO:send order to server', paymentData.paymentMethodData);
+                history.pushState('/confirm')
+              }}
+            />
+        
+         </div>
 
         </div>
     </div>

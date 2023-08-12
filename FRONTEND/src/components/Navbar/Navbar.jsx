@@ -35,7 +35,7 @@ const {total_item}= useCartContext()
       {/* Mobile Navbar */}
      <div className="flex md:hidden mob-nav z-50">
         <NavLink to="/cart" className="navbar-link--cart relative mr-6">
-          <FiShoppingCart className=' text-2xl' /><span className="cartQuantity bottom-3 left-3 items-center  "> 7 </span>
+          <FiShoppingCart className=' text-2xl' /><span className="cartQuantity bottom-3 left-3 items-center  ">  {total_item} </span>
         </NavLink>
 
         {mobMenu?<CgMenu className='text-2xl' onClick={()=>setMobMenu(false)}/>:<CgClose className='text-2xl' onClick={()=>setMobMenu(true)}/>}
