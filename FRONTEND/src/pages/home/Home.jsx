@@ -4,6 +4,7 @@ import MainCarousel from '../../components/Carousel/Carousel'
 import './home.style.css'
 import ShopbyBrand from '../../components/HomeComponent/ShopbyBrand/ShopbyBrand'
 import TopCategory from '../../components/HomeComponent/TopCategory/TopCategory'
+import { NavLink } from 'react-router-dom'
 
 const Home = () => {
 
@@ -55,12 +56,30 @@ const Home = () => {
           <div className="pet-category ">
           <h1 className='main-heading'>Explore By Pet Category ✨</h1>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-3 p-2 ">
-            <img src="./assests/HomePage/petCategories/dog.jpg" className=' rounded-2xl' alt="" />
-            <img src="./assests/HomePage/petCategories/cat.jpg" className=' rounded-2xl' alt="" />
-            <img src="./assests/HomePage/petCategories/fish.jpg" className=' rounded-2xl' alt="" />
-            <img src="./assests/HomePage/petCategories/birds.jpg" className=' rounded-2xl' alt="" />
-            <img src="./assests/HomePage/petCategories/rabbit.jpg" className=' rounded-2xl' alt="" />
-            <img src="./assests/HomePage/petCategories/guineaPig.jpg" className=' rounded-2xl' alt="" />
+          
+          <NavLink to='/products'>
+             <img src="./assests/HomePage/petCategories/dog.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+          <NavLink to='/products'>
+             <img src="./assests/HomePage/petCategories/cat.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+          <NavLink to='/products'>
+              <img src="./assests/HomePage/petCategories/fish.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+          <NavLink to='/products'>
+             <img src="./assests/HomePage/petCategories/birds.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+          <NavLink to='/products'>
+             <img src="./assests/HomePage/petCategories/rabbit.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+          <NavLink to='/products'>
+             <img src="./assests/HomePage/petCategories/guineaPig.jpg" className=' rounded-2xl' alt="" />
+          </NavLink>
+            
+            
+            
+            
+            
           </div>
           </div>
     </div>
