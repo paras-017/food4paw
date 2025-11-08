@@ -101,4 +101,7 @@ export const FilterContextProvider =({children})=>{
 //----------Using Context----------
 export const useFilterContext =()=>{
     return useContext(FilterContext)
+  //   const ctx = useContext(FilterContext);
+  // if (!ctx) throw new Error('Wrap your app in <FilterProvider>');
+  // return ctx;
 }

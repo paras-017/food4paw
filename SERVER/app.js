@@ -1,13 +1,13 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
+const cors = require('cors');
 const port = process.env.PORT || 8000
 const productRoutes = require('./routes/products')
 const connectDB = require('./db/connect')
+app.use(cors());
 
 app.use('/api/products', productRoutes)
-
-
 
 const start = async () => {
     try {

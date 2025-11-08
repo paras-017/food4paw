@@ -5,7 +5,9 @@ import Products from "../pages/products/Products";
 
 const AppContext = createContext()
 
-const API =  `https://food4pawsapi-production.up.railway.app/api/products?sort=-stars`
+// const API =  `https://food4pawsapi-production.up.railway.app/api/products?sort=-stars`
+const API =  `http://localhost:3000/api/products/`
+
 const initialState = {
     isLoading:false,
     isError:false,
@@ -26,6 +28,7 @@ const AppProvider = ({children}) => {
      try {
         const res = await axios.get(url)
         const products = await res.data
+      //   console.log(products)
         dispatch({type:"SET_API_DATA", payload:products['Products']})
      } catch (error) {
         console.log(`Product Context API ${error}`)

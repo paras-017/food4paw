@@ -3,7 +3,10 @@ import { useParams } from 'react-router-dom'
 import { useProductContext } from '../../context/productContext'
 import FormatPrice from '../../common/FormatPrice';
 import Star from '../../components/SingleProduct/Star';
-const API = `https://food4pawsapi-production.up.railway.app/api/products`
+
+// const API = `https://food4pawsapi-production.up.railway.app/api/products`
+const API =  `http://localhost:3000/api/products/`
+
 import styles from './singleProduct.module.css'
 import Loading from '../../common/Loading';
 import QuantityButton from '../../components/SingleProduct/QuantityButton';
